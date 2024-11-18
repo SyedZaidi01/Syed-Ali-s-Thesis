@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Have not heard of Latinx",
+        "Value": 76.0
+      },
+      {
+        "Entity": "Have not heard of Latinx",
+        "Value": 76.0
+      },
+      {
+        "Entity": "Do not use Latinx",
+        "Value": 20.0
+      },
+      {
+        "Entity": "Do not Latinx use",
+        "Value": 20.0
+      },
+      {
+        "Entity": "Have heard of Latinx",
+        "Value": NaN
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative"
+    }
+  }
+}

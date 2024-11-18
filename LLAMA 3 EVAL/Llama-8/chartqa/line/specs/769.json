@@ -1,0 +1,94 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "14-COUNTRY median",
+        "Not too much/ Not at all": "42.0",
+        "Great deal/ Fair amount": "58.0"
+      },
+      {
+        "Entity": "Australia",
+        "Not too much/ Not at all": "53.0",
+        "Great deal/ Fair amount": "48.0"
+      },
+      {
+        "Entity": "Japan",
+        "Not too much/ Not at all": "35.0",
+        "Great deal/ Fair amount": "65.0"
+      },
+      {
+        "Entity": "South Korea",
+        "Not too much/ Not at all": "nan",
+        "Great deal/ Fair amount": "81.0"
+      },
+      {
+        "Entity": "median",
+        "Not too much/ Not at all": "51.0",
+        "Great deal/ Fair amount": "48.0"
+      },
+      {
+        "Entity": "Germany Denmark",
+        "Not too much/ Not at all": "73.0",
+        "Great deal/ Fair amount": "61.0"
+      },
+      {
+        "Entity": "Netherlands",
+        "Not too much/ Not at all": "54.0",
+        "Great deal/ Fair amount": "46.0"
+      },
+      {
+        "Entity": "France",
+        "Not too much/ Not at all": "53.0",
+        "Great deal/ Fair amount": "46.0"
+      },
+      {
+        "Entity": "Belgium",
+        "Not too much/ Not at all": "51.0",
+        "Great deal/ Fair amount": "48.0"
+      },
+      {
+        "Entity": "Intaly",
+        "Not too much/ Not at all": "44.0",
+        "Great deal/ Fair amount": "56.0"
+      },
+      {
+        "Entity": "Spain",
+        "Not too much/ Not at all": "40.0",
+        "Great deal/ Fair amount": "60.0"
+      },
+      {
+        "Entity": "UK",
+        "Not too much/ Not at all": "33.0",
+        "Great deal/ Fair amount": "66.0"
+      },
+      {
+        "Entity": "Sweden",
+        "Not too much/ Not at all": "29.0",
+        "Great deal/ Fair amount": "nan"
+      },
+      {
+        "Entity": "Canada",
+        "Not too much/ Not at all": "3.0",
+        "Great deal/ Fair amount": "64.0"
+      },
+      {
+        "Entity": "U.S",
+        "Not too much/ Not at all": "32.0",
+        "Great deal/ Fair amount": "67.0"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Not too much/ Not at all",
+      "type": "quantitative"
+    }
+  }
+}

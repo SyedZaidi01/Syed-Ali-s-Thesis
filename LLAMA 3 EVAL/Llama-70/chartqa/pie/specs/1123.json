@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Pie chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "a great deal",
+        "Value": "59"
+      },
+      {
+        "Entity": "Not too much",
+        "Value": "10"
+      },
+      {
+        "Entity": "a fair amount",
+        "Value": "28"
+      }
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {
+      "field": "Value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal"
+    }
+  }
+}

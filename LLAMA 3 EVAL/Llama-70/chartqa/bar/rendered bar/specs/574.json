@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "It would cost too much",
+        "Major reason": 13
+      },
+      {
+        "Entity": "Do not think they need it",
+        "Major reason": 31
+      },
+      {
+        "Entity": "well it works",
+        "Major reason": 72
+      },
+      {
+        "Entity": "Want to Aknov well it works",
+        "Major reason": 72
+      },
+      {
+        "Entity": "Concern about side effects",
+        "Major reason": 76
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Major reason",
+      "type": "quantitative"
+    }
+  }
+}

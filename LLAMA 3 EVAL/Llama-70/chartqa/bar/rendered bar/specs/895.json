@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Dem /Lean Dem",
+        "More people are being tested than in previous months": 19
+      },
+      {
+        "Entity": "Re p/Lean Rep",
+        "More people are being tested than in previous months": 62
+      },
+      {
+        "Entity": "Total",
+        "More people are being tested than in previous months": 39
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "More people are being tested than in previous months",
+      "type": "quantitative"
+    }
+  }
+}

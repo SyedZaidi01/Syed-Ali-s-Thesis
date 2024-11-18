@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Pie chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "child care",
+        "a major reason": "11",
+        "a minor reason": "11",
+        "Not a reason": "77"
+      },
+      {
+        "Entity": "Unable to arrange child care",
+        "a major reason": "11",
+        "a minor reason": "11",
+        "Not a reason": "77"
+      },
+      {
+        "Entity": "isolated from others",
+        "a major reason": "15",
+        "a minor reason": "24",
+        "Not a reason": "58"
+      },
+      {
+        "Entity": "Concern about being isolated from others",
+        "a major reason": "15",
+        "a minor reason": "24",
+        "Not a reason": "58"
+      },
+      {
+        "Entity": "obligations",
+        "a major reason": "23",
+        "a minor reason": "38",
+        "Not a reason": "39"
+      },
+      {
+        "Entity": "Too many other obligations",
+        "a major reason": "23",
+        "a minor reason": "38",
+        "Not a reason": "39"
+      },
+      {
+        "Entity": "Unable to miss work",
+        "a major reason": "35",
+        "a minor reason": "17",
+        "Not a reason": "47"
+      },
+      {
+        "Entity": "necessary",
+        "a major reason": "44",
+        "a minor reason": "35",
+        "Not a reason": "19"
+      },
+      {
+        "Entity": "Just don't think it's",
+        "a major reason": "44",
+        "a minor reason": "35",
+        "Not a reason": "19"
+      }
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {
+      "field": "a major reason",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal"
+    }
+  }
+}

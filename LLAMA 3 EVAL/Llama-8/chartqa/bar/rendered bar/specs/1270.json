@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Black",
+        "Almost all of the time": 26
+      },
+      {
+        "Entity": "Hispanic",
+        "Almost all of the time": 19
+      },
+      {
+        "Entity": "White",
+        "Almost all of the time": 10
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Almost all of the time",
+      "type": "quantitative"
+    }
+  }
+}

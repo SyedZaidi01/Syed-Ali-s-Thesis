@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Mexico",
+        "Never/Rarely": "69",
+        "Occasionally) Frequently": "30.0"
+      },
+      {
+        "Entity": "Philippines",
+        "Never/Rarely": "61",
+        "Occasionally) Frequently": "38.0"
+      },
+      {
+        "Entity": "Kenya",
+        "Never/Rarely": "48",
+        "Occasionally) Frequently": "nan"
+      },
+      {
+        "Entity": "Jordan",
+        "Never/Rarely": "48",
+        "Occasionally) Frequently": "51.0"
+      },
+      {
+        "Entity": "Colombia",
+        "Never/Rarely": "46",
+        "Occasionally) Frequently": "53.0"
+      },
+      {
+        "Entity": "Lebanon",
+        "Never/Rarely": "40",
+        "Occasionally) Frequently": "nan"
+      },
+      {
+        "Entity": "Venezuela",
+        "Never/Rarely": "40",
+        "Occasionally) Frequently": "60.0"
+      },
+      {
+        "Entity": "South Africa",
+        "Never/Rarely": "34",
+        "Occasionally) Frequently": "66.0"
+      },
+      {
+        "Entity": "India",
+        "Never/Rarely": "27",
+        "Occasionally) Frequently": "66.0"
+      }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Never/Rarely",
+      "type": "quantitative"
+    }
+  }
+}

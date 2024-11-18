@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "14-COUNTRY MEDIAN",
+        "Divided": 48.0
+      },
+      {
+        "Entity": "Japan",
+        "Divided": 27.0
+      },
+      {
+        "Entity": "Australia",
+        "Divided": 40.0
+      },
+      {
+        "Entity": "South Korea",
+        "Divided": 36.0
+      },
+      {
+        "Entity": "Spain median",
+        "Divided": 59.0
+      },
+      {
+        "Entity": "Belgium France Germany",
+        "Divided": 55.0
+      },
+      {
+        "Entity": "Netherlands",
+        "Divided": 53.0
+      },
+      {
+        "Entity": "Altaly",
+        "Divided": 54.0
+      },
+      {
+        "Entity": "UK",
+        "Divided": 46.0
+      },
+      {
+        "Entity": "Sweden",
+        "Divided": 36.0
+      },
+      {
+        "Entity": "Denmark",
+        "Divided": 25.0
+      },
+      {
+        "Entity": "U.S",
+        "Divided": NaN
+      },
+      {
+        "Entity": "Canada",
+        "Divided": 29.0
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Divided",
+      "type": "quantitative"
+    }
+  }
+}

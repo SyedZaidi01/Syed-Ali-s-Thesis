@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Black",
+        "Take breaks from": 60
+      },
+      {
+        "Entity": "Hispanic",
+        "Take breaks from": 63
+      },
+      {
+        "Entity": "White",
+        "Take breaks from": 76
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Take breaks from",
+      "type": "quantitative"
+    }
+  }
+}

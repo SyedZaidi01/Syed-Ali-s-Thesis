@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "infectious diseases",
+        "Acceptable": "75",
+        "Unacceptable": "24"
+      },
+      {
+        "Entity": "Researchers who study infectious diseases",
+        "Acceptable": "75",
+        "Unacceptable": "24"
+      },
+      {
+        "Entity": "companies",
+        "Acceptable": "40",
+        "Unacceptable": "59"
+      },
+      {
+        "Entity": "Pharmaceutical",
+        "Acceptable": "40",
+        "Unacceptable": "59"
+      },
+      {
+        "Entity": "Health insurance",
+        "Acceptable": "40",
+        "Unacceptable": "59"
+      },
+      {
+        "Entity": "officials",
+        "Acceptable": "37",
+        "Unacceptable": "62"
+      },
+      {
+        "Entity": "State and local elected",
+        "Acceptable": "37",
+        "Unacceptable": "62"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Acceptable",
+      "type": "quantitative"
+    }
+  }
+}

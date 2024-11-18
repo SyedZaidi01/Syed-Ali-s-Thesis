@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Hispa nics",
+        "Isolated incidents": "72.0",
+        "Signsofa broader problem": "26"
+      },
+      {
+        "Entity": "Blacks",
+        "Isolated incidents": "43.0",
+        "Signsofa broader problem": "57"
+      },
+      {
+        "Entity": "Whites",
+        "Isolated incidents": "72.0",
+        "Signsofa broader problem": "27"
+      },
+      {
+        "Entity": "All officers",
+        "Isolated incidents": "nan",
+        "Signsofa broader problem": "31"
+      }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Isolated incidents",
+      "type": "quantitative"
+    }
+  }
+}

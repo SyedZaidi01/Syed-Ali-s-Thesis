@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Pie chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Racial background",
+        "Value": "11"
+      },
+      {
+        "Entity": "Both, racial and ethnic background",
+        "Value": "56"
+      },
+      {
+        "Entity": "Don't know",
+        "Value": "13"
+      },
+      {
+        "Entity": "Ethnic background",
+        "Value": "19"
+      }
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {
+      "field": "Value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal"
+    }
+  }
+}

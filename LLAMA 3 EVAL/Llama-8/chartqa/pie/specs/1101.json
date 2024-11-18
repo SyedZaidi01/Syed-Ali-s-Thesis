@@ -1,0 +1,96 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Pie chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Dem/ Lean Dem",
+        "Better": "27",
+        "the About same": "23",
+        "Worse": "49",
+        "Worse.1": "0"
+      },
+      {
+        "Entity": "Rep/Lean Rep",
+        "Better": "23",
+        "the About same": "29",
+        "Worse": "47",
+        "Worse.1": "0"
+      },
+      {
+        "Entity": "Hispanic",
+        "Better": "26",
+        "the About same": "29",
+        "Worse": "44",
+        "Worse.1": "0"
+      },
+      {
+        "Entity": "Black",
+        "Better": "33",
+        "the About same": "29",
+        "Worse": "37",
+        "Worse.1": "0"
+      },
+      {
+        "Entity": "White",
+        "Better": "22",
+        "the About same": "25",
+        "Worse": "52",
+        "Worse.1": "0"
+      },
+      {
+        "Entity": "65+",
+        "Better": "20",
+        "the About same": "27",
+        "Worse": "51",
+        "Worse.1": "0"
+      },
+      {
+        "Entity": "50-64",
+        "Better": "23",
+        "the About same": "24",
+        "Worse": "52",
+        "Worse.1": "0"
+      },
+      {
+        "Entity": "30-49",
+        "Better": "24",
+        "the About same": "29",
+        "Worse": "47",
+        "Worse.1": "0"
+      },
+      {
+        "Entity": "Ages 18-29",
+        "Better": "33",
+        "the About same": "23",
+        "Worse": "43",
+        "Worse.1": "0"
+      },
+      {
+        "Entity": "18-29",
+        "Better": "33",
+        "the About same": "23",
+        "Worse": "43",
+        "Worse.1": "0"
+      },
+      {
+        "Entity": "Total",
+        "Better": "25",
+        "the About same": "26",
+        "Worse": "48",
+        "Worse.1": "0"
+      }
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {
+      "field": "Better",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal"
+    }
+  }
+}

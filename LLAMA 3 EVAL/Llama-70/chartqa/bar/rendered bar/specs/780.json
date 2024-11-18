@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Moderate/ Liberal",
+        "Vote in person on Election Day": 51
+      },
+      {
+        "Entity": "Conservative",
+        "Vote in person on Election Day": 62
+      },
+      {
+        "Entity": "Very conservative",
+        "Vote in person on Election Day": 68
+      },
+      {
+        "Entity": "Trump voters",
+        "Vote in person on Election Day": 60
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Vote in person on Election Day",
+      "type": "quantitative"
+    }
+  }
+}

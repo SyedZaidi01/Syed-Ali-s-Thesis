@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Commision",
+        "Values": "3"
+      },
+      {
+        "Entity": "European Commision",
+        "Values": "3"
+      },
+      {
+        "Entity": "World Bank",
+        "Values": "3"
+      },
+      {
+        "Entity": "Interational",
+        "Values": "3"
+      },
+      {
+        "Entity": "Rotary",
+        "Values": "3"
+      },
+      {
+        "Entity": "UNOCHA",
+        "Values": "UNOCHA"
+      },
+      {
+        "Entity": "Japan",
+        "Values": "5"
+      },
+      {
+        "Entity": "Germany",
+        "Values": "nan"
+      },
+      {
+        "Entity": "Gavi Alliance",
+        "Values": "8"
+      },
+      {
+        "Entity": "LUK",
+        "Values": "10"
+      },
+      {
+        "Entity": "Foundation",
+        "Values": "12"
+      },
+      {
+        "Entity": "Gates",
+        "Values": "12"
+      },
+      {
+        "Entity": "U.S.",
+        "Values": "20"
+      }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Values",
+      "type": "quantitative"
+    }
+  }
+}

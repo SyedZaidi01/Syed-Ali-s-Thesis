@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Dem/Lean Dem",
+        "a great deal": 60.0
+      },
+      {
+        "Entity": "Rep/Lean Rep",
+        "a great deal": 28.0
+      },
+      {
+        "Entity": "HS for less",
+        "a great deal": 4.1
+      },
+      {
+        "Entity": "Some college",
+        "a great deal": 44.0
+      },
+      {
+        "Entity": "College grad",
+        "a great deal": 50.0
+      },
+      {
+        "Entity": "Postgrad uate",
+        "a great deal": 56.0
+      },
+      {
+        "Entity": "Hispanic",
+        "a great deal": 53.0
+      },
+      {
+        "Entity": "Black",
+        "a great deal": 56.0
+      },
+      {
+        "Entity": "White",
+        "a great deal": NaN
+      },
+      {
+        "Entity": "Total",
+        "a great deal": 4638.0
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "a great deal",
+      "type": "quantitative"
+    }
+  }
+}

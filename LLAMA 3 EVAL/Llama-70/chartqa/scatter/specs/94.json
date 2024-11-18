@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Attending a crowded party",
+        "Uncomfortable": "84",
+        "Comfortable": "15"
+      },
+      {
+        "Entity": "Attending an indoor sporting event or concert",
+        "Uncomfortable": "80",
+        "Comfortable": "19"
+      },
+      {
+        "Entity": "Eating out in a restaurant",
+        "Uncomfortable": "55",
+        "Comfortable": "44"
+      },
+      {
+        "Entity": "Going to a hair salon or barbershop",
+        "Uncomfortable": "47",
+        "Comfortable": "53"
+      },
+      {
+        "Entity": "family member inside their home",
+        "Uncomfortable": "35",
+        "Comfortable": "65"
+      },
+      {
+        "Entity": "Visiting with a close friend or family member inside their home",
+        "Uncomfortable": "35",
+        "Comfortable": "65"
+      },
+      {
+        "Entity": "Going out to the grocery store",
+        "Uncomfortable": "24",
+        "Comfortable": "75"
+      }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Uncomfortable",
+      "type": "quantitative"
+    }
+  }
+}

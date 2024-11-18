@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Foreign born",
+        "Oppose": 92
+      },
+      {
+        "Entity": "ULS born",
+        "Oppose": 14
+      },
+      {
+        "Entity": "Among Hispanics",
+        "Oppose": 0
+      },
+      {
+        "Entity": "Hispanic",
+        "Oppose": 11
+      },
+      {
+        "Entity": "Asian *",
+        "Oppose": 27
+      },
+      {
+        "Entity": "Black",
+        "Oppose": 16
+      },
+      {
+        "Entity": "White",
+        "Oppose": 29
+      },
+      {
+        "Entity": "Re p/Lean Rep",
+        "Oppose": 43
+      },
+      {
+        "Entity": "Dem /Lean Dem",
+        "Oppose": 8
+      },
+      {
+        "Entity": "Total",
+        "Oppose": 24
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Oppose",
+      "type": "quantitative"
+    }
+  }
+}

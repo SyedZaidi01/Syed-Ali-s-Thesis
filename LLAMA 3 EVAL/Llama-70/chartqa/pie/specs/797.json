@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Pie chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Having an open",
+        "Never": "48",
+        "Rarely": "20",
+        "Sometimes": "18",
+        "Always": "14"
+      },
+      {
+        "Entity": "exchanging explicit of themselves ages",
+        "Never": "33",
+        "Rarely": "17",
+        "Sometimes": "25",
+        "Always": "24"
+      },
+      {
+        "Entity": "Consenting adults exchanging explicit images of themselves",
+        "Never": "33",
+        "Rarely": "17",
+        "Sometimes": "25",
+        "Always": "24"
+      },
+      {
+        "Entity": "Consenting adults exchanging explicit of themselves ges",
+        "Never": "33",
+        "Rarely": "17",
+        "Sometimes": "25",
+        "Always": "24"
+      },
+      {
+        "Entity": "consenting adults not in committed relationship I",
+        "Never": "24",
+        "Rarely": "14",
+        "Sometimes": "32",
+        "Always": "29"
+      },
+      {
+        "Entity": "consenting adults not in committed relationship a",
+        "Never": "24",
+        "Rarely": "14",
+        "Sometimes": "32",
+        "Always": "29"
+      },
+      {
+        "Entity": "Casual sex between",
+        "Never": "0",
+        "Rarely": "0",
+        "Sometimes": "0",
+        "Always": "0"
+      },
+      {
+        "Entity": "relationship",
+        "Never": "0",
+        "Rarely": "0",
+        "Sometimes": "0",
+        "Always": "0"
+      },
+      {
+        "Entity": "adults in a committed",
+        "Never": "25",
+        "Rarely": "9",
+        "Sometimes": "22",
+        "Always": "43"
+      },
+      {
+        "Entity": "Sex between unmarried",
+        "Never": "0",
+        "Rarely": "0",
+        "Sometimes": "0",
+        "Always": "0"
+      }
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {
+      "field": "Never",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal"
+    }
+  }
+}

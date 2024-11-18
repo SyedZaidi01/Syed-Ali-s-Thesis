@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "China",
+        "Poor": 37.0
+      },
+      {
+        "Entity": "Italy",
+        "Poor": 27.0
+      },
+      {
+        "Entity": "who",
+        "Poor": 24.0
+      },
+      {
+        "Entity": "U.S.",
+        "Poor": NaN
+      },
+      {
+        "Entity": "UK",
+        "Poor": 38.0
+      },
+      {
+        "Entity": "Germany",
+        "Poor": 25.0
+      },
+      {
+        "Entity": "South Korea",
+        "Poor": 7.0
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Poor",
+      "type": "quantitative"
+    }
+  }
+}

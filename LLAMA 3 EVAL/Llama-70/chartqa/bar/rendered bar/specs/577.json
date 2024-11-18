@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Dem I lean Dem",
+        "Too slowly, delaying to vaccine access a": 13
+      },
+      {
+        "Entity": "Rep/lean Rep",
+        "Too slowly, delaying to vaccine access a": 28
+      },
+      {
+        "Entity": "U.S adults",
+        "Too slowly, delaying to vaccine access a": 20
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Too slowly, delaying to vaccine access a",
+      "type": "quantitative"
+    }
+  }
+}

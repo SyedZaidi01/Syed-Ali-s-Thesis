@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Like a \"bridge\" between different racial groups",
+        "Values": "19.0"
+      },
+      {
+        "Entity": "More understanding of people of different racial backgrounds",
+        "Values": "55.0"
+      },
+      {
+        "Entity": "cultures",
+        "Values": "59.0"
+      },
+      {
+        "Entity": "More open to other",
+        "Values": "59.0"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Values",
+      "type": "quantitative"
+    }
+  }
+}

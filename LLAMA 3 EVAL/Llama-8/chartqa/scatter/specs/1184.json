@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "national parks",
+        "Too little": "54",
+        "About the right amount": "40",
+        "Too much": "5"
+      },
+      {
+        "Entity": "Protect open lands in",
+        "Too little": "54",
+        "About the right amount": "40",
+        "Too much": "5"
+      },
+      {
+        "Entity": "habitats",
+        "Too little": "62",
+        "About the right amount": "32",
+        "Too much": "6"
+      },
+      {
+        "Entity": "Protect animals and their",
+        "Too little": "62",
+        "About the right amount": "32",
+        "Too much": "6"
+      },
+      {
+        "Entity": "change",
+        "Too little": "65",
+        "About the right amount": "25",
+        "Too much": "9"
+      },
+      {
+        "Entity": "Reduce effects of climate",
+        "Too little": "65",
+        "About the right amount": "25",
+        "Too much": "9"
+      },
+      {
+        "Entity": "Protect air quality",
+        "Too little": "65",
+        "About the right amount": "30",
+        "Too much": "0"
+      },
+      {
+        "Entity": "rivers and streams",
+        "Too little": "67",
+        "About the right amount": "29",
+        "Too much": "3"
+      },
+      {
+        "Entity": "Protect water quality of lakes, rivers and streams",
+        "Too little": "67",
+        "About the right amount": "29",
+        "Too much": "3"
+      }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Too little",
+      "type": "quantitative"
+    }
+  }
+}

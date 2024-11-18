@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "College+",
+        "Often": "20",
+        "Sometimes": "55",
+        "NET": "75"
+      },
+      {
+        "Entity": "Some college",
+        "Often": "16",
+        "Sometimes": "52",
+        "NET": "68"
+      },
+      {
+        "Entity": "HS or less",
+        "Often": "14",
+        "Sometimes": "47",
+        "NET": "61"
+      },
+      {
+        "Entity": "50+",
+        "Often": "9",
+        "Sometimes": "46",
+        "NET": "55"
+      },
+      {
+        "Entity": "30-49",
+        "Often": "17",
+        "Sometimes": "52",
+        "NET": "69"
+      },
+      {
+        "Entity": "Ages 18-29",
+        "Often": "20",
+        "Sometimes": "55",
+        "NET": "75"
+      },
+      {
+        "Entity": "Hispanic",
+        "Often": "19",
+        "Sometimes": "47",
+        "NET": "66"
+      },
+      {
+        "Entity": "Black",
+        "Often": "13",
+        "Sometimes": "45",
+        "NET": "58"
+      },
+      {
+        "Entity": "White",
+        "Often": "16",
+        "Sometimes": "55",
+        "NET": "71"
+      },
+      {
+        "Entity": "Total",
+        "Often": "17",
+        "Sometimes": "52",
+        "NET": "68"
+      }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Often",
+      "type": "quantitative"
+    }
+  }
+}

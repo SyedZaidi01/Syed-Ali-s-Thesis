@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Tunisia",
+        "Never/Rarely": 62
+      },
+      {
+        "Entity": "Vietnam",
+        "Never/Rarely": 53
+      },
+      {
+        "Entity": "Jordan",
+        "Never/Rarely": 54
+      },
+      {
+        "Entity": "Mexico",
+        "Never/Rarely": 54
+      },
+      {
+        "Entity": "Kenya",
+        "Never/Rarely": 50
+      },
+      {
+        "Entity": "Philippines",
+        "Never/Rarely": 50
+      },
+      {
+        "Entity": "India",
+        "Never/Rarely": 35
+      },
+      {
+        "Entity": "South Africa",
+        "Never/Rarely": 31
+      },
+      {
+        "Entity": "Venezuela",
+        "Never/Rarely": 27
+      },
+      {
+        "Entity": "Lebanon",
+        "Never/Rarely": 23
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Never/Rarely",
+      "type": "quantitative"
+    }
+  }
+}

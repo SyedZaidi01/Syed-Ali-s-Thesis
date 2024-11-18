@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "May 5",
+        "A great deal": 38
+      },
+      {
+        "Entity": "Still in effect on",
+        "A great deal": 38
+      },
+      {
+        "Entity": "ended before May 5",
+        "A great deal": 38
+      },
+      {
+        "Entity": "Never in effect or",
+        "A great deal": 38
+      },
+      {
+        "Entity": "Among Dem/lean De where stay-at-home Never in effect or",
+        "A great deal": 28
+      },
+      {
+        "Entity": "Among Rep/lean Re where stay-at-home Never in effect or",
+        "A great deal": 38
+      },
+      {
+        "Entity": "Dem I lean Dem",
+        "A great deal": 47
+      },
+      {
+        "Entity": "Rep/ lean Rep",
+        "A great deal": 38
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "A great deal",
+      "type": "quantitative"
+    }
+  }
+}

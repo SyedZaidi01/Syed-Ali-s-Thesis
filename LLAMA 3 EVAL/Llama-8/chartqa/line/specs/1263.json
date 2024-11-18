@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Germany",
+        "Should not": "60",
+        "Should": "34"
+      },
+      {
+        "Entity": "U.S",
+        "Should not": "29",
+        "Should": "60"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Should not",
+      "type": "quantitative"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Disapprove",
+        "Value": "4"
+      },
+      {
+        "Entity": "Approve",
+        "Value": "55"
+      },
+      {
+        "Entity": "Not care",
+        "Value": "40"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative"
+    }
+  }
+}

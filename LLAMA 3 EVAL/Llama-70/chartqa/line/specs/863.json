@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Year": "2000",
+        "It matters wins the really who presidential election": "50",
+        "Things will be pretty much the same regardless of who is elected": "44"
+      },
+      {
+        "Year": "2004",
+        "It matters wins the really who presidential election": "67",
+        "Things will be pretty much the same regardless of who is elected": "29"
+      },
+      {
+        "Year": "2008",
+        "It matters wins the really who presidential election": "63",
+        "Things will be pretty much the same regardless of who is elected": "32"
+      },
+      {
+        "Year": "2012",
+        "It matters wins the really who presidential election": "63",
+        "Things will be pretty much the same regardless of who is elected": "34"
+      },
+      {
+        "Year": "2016",
+        "It matters wins the really who presidential election": "74",
+        "Things will be pretty much the same regardless of who is elected": "22"
+      },
+      {
+        "Year": "2020",
+        "It matters wins the really who presidential election": "83",
+        "Things will be pretty much the same regardless of who is elected": "16"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "It matters wins the really who presidential election",
+      "type": "quantitative"
+    }
+  }
+}

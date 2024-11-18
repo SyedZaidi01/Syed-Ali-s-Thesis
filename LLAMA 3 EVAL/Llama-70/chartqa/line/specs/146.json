@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Germany",
+        "Unlikely": "47",
+        "Likely": "49"
+      },
+      {
+        "Entity": "U.S",
+        "Unlikely": "39",
+        "Likely": "59"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Unlikely",
+      "type": "quantitative"
+    }
+  }
+}

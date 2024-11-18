@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Year": "Apr",
+        "The worst is still to come": "73",
+        "The worst is behind us": "26"
+      },
+      {
+        "Year": "Jun",
+        "The worst is still to come": "59",
+        "The worst is behind us": "40"
+      },
+      {
+        "Year": "Nov",
+        "The worst is still to come": "71",
+        "The worst is behind us": "28"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "The worst is still to come",
+      "type": "quantitative"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Germany",
+        "Disagree": "52",
+        "Agree": "47"
+      },
+      {
+        "Entity": "U.S",
+        "Disagree": "21",
+        "Agree": "78"
+      }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Disagree",
+      "type": "quantitative"
+    }
+  }
+}

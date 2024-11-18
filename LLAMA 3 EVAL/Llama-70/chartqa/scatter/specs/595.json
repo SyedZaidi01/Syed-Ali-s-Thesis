@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Fourth or higher generation",
+        "Identify as Hispanic": "50",
+        "Do not identify as Hispanic": "50"
+      },
+      {
+        "Entity": "Third generation",
+        "Identify as Hispanic": "77",
+        "Do not identify as Hispanic": "23"
+      },
+      {
+        "Entity": "Second generation",
+        "Identify as Hispanic": "92",
+        "Do not identify as Hispanic": "8"
+      },
+      {
+        "Entity": "Foreign born",
+        "Identify as Hispanic": "97",
+        "Do not identify as Hispanic": "3"
+      }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Identify as Hispanic",
+      "type": "quantitative"
+    }
+  }
+}

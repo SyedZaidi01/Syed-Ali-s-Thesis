@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "New York",
+        "Values": "25.0"
+      },
+      {
+        "Entity": "New Jersey",
+        "Values": "32.0"
+      },
+      {
+        "Entity": "California",
+        "Values": "37.0"
+      },
+      {
+        "Entity": "Texas",
+        "Values": "52.0"
+      },
+      {
+        "Entity": "Flori da",
+        "Values": "54.0"
+      }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Values",
+      "type": "quantitative"
+    }
+  }
+}

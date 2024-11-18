@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Central Americans fleeing Mexico to Colombia Migrants living in Colombia",
+        "Unfavorable": 54
+      },
+      {
+        "Entity": "Mexico Central Americans fleeing to Mexico Colombia Migrants living in Colombia",
+        "Unfavorable": 54
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Unfavorable",
+      "type": "quantitative"
+    }
+  }
+}

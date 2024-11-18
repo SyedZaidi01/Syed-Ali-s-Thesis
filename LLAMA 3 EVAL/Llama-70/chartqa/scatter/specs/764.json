@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Elected officials",
+        "Great deal": "33",
+        "Fair amount": "49",
+        "Not too much": "14.0",
+        "None at all": "0.0"
+      },
+      {
+        "Entity": "Business leaders",
+        "Great deal": "5",
+        "Fair amount": "43",
+        "Not too much": "41.0",
+        "None at all": "11.0"
+      },
+      {
+        "Entity": "Journalists",
+        "Great deal": "9",
+        "Fair amount": "39",
+        "Not too much": "33.0",
+        "None at all": "19.0"
+      },
+      {
+        "Entity": "Religious leaders",
+        "Great deal": "17",
+        "Fair amount": "46",
+        "Not too much": "26.0",
+        "None at all": "11.0"
+      },
+      {
+        "Entity": "The military",
+        "Great deal": "38",
+        "Fair amount": "45",
+        "Not too much": "13.0",
+        "None at all": "0.0"
+      },
+      {
+        "Entity": "Scientists",
+        "Great deal": "39",
+        "Fair amount": "48",
+        "Not too much": "10.0",
+        "None at all": "nan"
+      },
+      {
+        "Entity": "Medical scientists",
+        "Great deal": "43",
+        "Fair amount": "46",
+        "Not too much": "nan",
+        "None at all": "nan"
+      }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Great deal",
+      "type": "quantitative"
+    }
+  }
+}

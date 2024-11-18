@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Temporarily cutting workers payroll Social Security and Medicare taxes",
+        "Strongly Strongly oppose favor": 314620
+      },
+      {
+        "Entity": "benefits beyond July 31",
+        "Strongly Strongly oppose favor": 314620
+      },
+      {
+        "Entity": "Extending the $600-per-week increase in unemployment",
+        "Strongly Strongly oppose favor": 39
+      },
+      {
+        "Entity": "state and local governments",
+        "Strongly Strongly oppose favor": 23
+      },
+      {
+        "Entity": "Providing financial assistance to",
+        "Strongly Strongly oppose favor": 23
+      },
+      {
+        "Entity": "keeping workers on payroll",
+        "Strongly Strongly oppose favor": 0
+      },
+      {
+        "Entity": "and loans to businesses",
+        "Strongly Strongly oppose favor": 11
+      },
+      {
+        "Entity": "additional tax cuts oans to businesses",
+        "Strongly Strongly oppose favor": 11
+      },
+      {
+        "Entity": "Providing additional tax cuts and loans to businesses",
+        "Strongly Strongly oppose favor": 11
+      },
+      {
+        "Entity": "Preventing evictions, foreclosures on those who have lost jobs or income",
+        "Strongly Strongly oppose favor": 12
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Strongly Strongly oppose favor",
+      "type": "quantitative"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "14-COUNTRY MEDIAN",
+        "Bad": "27.0",
+        "Good": "73.0"
+      },
+      {
+        "Entity": "Japan",
+        "Bad": "43.0",
+        "Good": "55.0"
+      },
+      {
+        "Entity": "Australia South Korea",
+        "Bad": "nan",
+        "Good": "86.0"
+      },
+      {
+        "Entity": "MEDIAN",
+        "Bad": "29.0",
+        "Good": "nan"
+      },
+      {
+        "Entity": "UK",
+        "Bad": "54.0",
+        "Good": "46.0"
+      },
+      {
+        "Entity": "Spain",
+        "Bad": "47.0",
+        "Good": "54.0"
+      },
+      {
+        "Entity": "France",
+        "Bad": "nan",
+        "Good": "59.0"
+      },
+      {
+        "Entity": "Belgium",
+        "Bad": "39.0",
+        "Good": "6.0"
+      },
+      {
+        "Entity": "Sweden",
+        "Bad": "29.0",
+        "Good": "nan"
+      },
+      {
+        "Entity": "Altaly",
+        "Bad": "25.0",
+        "Good": "nan"
+      },
+      {
+        "Entity": "Germany Netherlands",
+        "Bad": "nan",
+        "Good": "nan"
+      },
+      {
+        "Entity": "Denmark",
+        "Bad": "95.0",
+        "Good": "95.0"
+      },
+      {
+        "Entity": "U.S",
+        "Bad": "52.0",
+        "Good": "nan"
+      },
+      {
+        "Entity": "Canada",
+        "Bad": "nan",
+        "Good": "88.0"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Bad",
+      "type": "quantitative"
+    }
+  }
+}

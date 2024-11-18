@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Dem/Lean Dem",
+        "Prioritize economic relations with China": 20
+      },
+      {
+        "Entity": "Rep/Lean Rep",
+        "Prioritize economic relations with China": 26
+      },
+      {
+        "Entity": "50+",
+        "Prioritize economic relations with China": 24
+      },
+      {
+        "Entity": "30-49",
+        "Prioritize economic relations with China": 22
+      },
+      {
+        "Entity": "Ages 18-29",
+        "Prioritize economic relations with China": 21
+      },
+      {
+        "Entity": "Total",
+        "Prioritize economic relations with China": 23
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Prioritize economic relations with China",
+      "type": "quantitative"
+    }
+  }
+}

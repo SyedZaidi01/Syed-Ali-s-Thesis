@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "delivered in time to be counted",
+        "Very": "13",
+        "Somewhat": "39",
+        "Not too": "31",
+        "Not at all": "17.0"
+      },
+      {
+        "Entity": "Ballots sent by mail will be delivered in time to be counted",
+        "Very": "13",
+        "Somewhat": "39",
+        "Not too": "31",
+        "Not at all": "17.0"
+      },
+      {
+        "Entity": "within a day or two of Election Day",
+        "Very": "15",
+        "Somewhat": "34",
+        "Not too": "36",
+        "Not at all": "14.0"
+      },
+      {
+        "Entity": "Americans know who won the election",
+        "Very": "15",
+        "Somewhat": "34",
+        "Not too": "36",
+        "Not at all": "14.0"
+      },
+      {
+        "Entity": "be clear which candidate won the election",
+        "Very": "22",
+        "Somewhat": "44",
+        "Not too": "24",
+        "Not at all": "10.0"
+      },
+      {
+        "Entity": "After all the votes are counted, it will car which candidate won the election",
+        "Very": "22",
+        "Somewhat": "44",
+        "Not too": "24",
+        "Not at all": "10.0"
+      },
+      {
+        "Entity": "After all the votes are counted, it will be clear which candidate won the election",
+        "Very": "22",
+        "Somewhat": "44",
+        "Not too": "24",
+        "Not at all": "10.0"
+      },
+      {
+        "Entity": "People who are NOT legally qualified to vote are prevented from casting a ballot",
+        "Very": "26",
+        "Somewhat": "35",
+        "Not too": "26",
+        "Not at all": "12.0"
+      },
+      {
+        "Entity": "In- person polling places will be run safely, without spreading the coronavirus",
+        "Very": "33",
+        "Somewhat": "47",
+        "Not too": "16",
+        "Not at all": "nan"
+      },
+      {
+        "Entity": "People who are legally qualified and want to vote are able to cast a ballot",
+        "Very": "39",
+        "Somewhat": "44",
+        "Not too": "13",
+        "Not at all": "0.0"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Very",
+      "type": "quantitative"
+    }
+  }
+}

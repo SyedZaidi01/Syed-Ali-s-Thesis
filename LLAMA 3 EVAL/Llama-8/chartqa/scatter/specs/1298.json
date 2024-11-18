@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Liberal",
+        "More": "12",
+        "About the same": "31",
+        "Less": "56"
+      },
+      {
+        "Entity": "Cons /Mod",
+        "More": "24",
+        "About the same": "39",
+        "Less": "36"
+      },
+      {
+        "Entity": "Dem /Lean Dem",
+        "More": "19",
+        "About the same": "35",
+        "Less": "45"
+      },
+      {
+        "Entity": "Mod/ Lib",
+        "More": "37",
+        "About the same": "47",
+        "Less": "15"
+      },
+      {
+        "Entity": "Conserv",
+        "More": "43",
+        "About the same": "48",
+        "Less": "8"
+      },
+      {
+        "Entity": "Re p/Lean Rep",
+        "More": "41",
+        "About the same": "48",
+        "Less": "11"
+      },
+      {
+        "Entity": "Total",
+        "More": "29",
+        "About the same": "41",
+        "Less": "29"
+      }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "More",
+      "type": "quantitative"
+    }
+  }
+}

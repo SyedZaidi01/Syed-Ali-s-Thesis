@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Sub- Saharan Africa",
+        "Less than high school": 12.0
+      },
+      {
+        "Entity": "North Africa",
+        "Less than high school": 12.0
+      },
+      {
+        "Entity": "Middle East",
+        "Less than high school": 12.0
+      },
+      {
+        "Entity": "South America",
+        "Less than high school": 14.0
+      },
+      {
+        "Entity": "Central America",
+        "Less than high school": 47.0
+      },
+      {
+        "Entity": "Caribbean",
+        "Less than high school": 23.0
+      },
+      {
+        "Entity": "Other North America",
+        "Less than high school": NaN
+      },
+      {
+        "Entity": "Europe",
+        "Less than high school": 11.0
+      },
+      {
+        "Entity": "Oceania",
+        "Less than high school": 13.0
+      },
+      {
+        "Entity": "South Asia",
+        "Less than high school": 10.0
+      },
+      {
+        "Entity": "Central Asia",
+        "Less than high school": 5.0
+      },
+      {
+        "Entity": "Southeast Asia",
+        "Less than high school": 16.0
+      },
+      {
+        "Entity": "East and",
+        "Less than high school": 16.0
+      },
+      {
+        "Entity": "Mexico",
+        "Less than high school": 54.0
+      },
+      {
+        "Entity": "Foreign born birthplace:",
+        "Less than high school": 0.0
+      },
+      {
+        "Entity": "Foreign born",
+        "Less than high school": 27.0
+      },
+      {
+        "Entity": "U.S. born",
+        "Less than high school": 8.0
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Less than high school",
+      "type": "quantitative"
+    }
+  }
+}

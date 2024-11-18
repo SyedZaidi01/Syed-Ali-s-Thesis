@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Liberal",
+        "More": 12
+      },
+      {
+        "Entity": "Cons /Mod",
+        "More": 24
+      },
+      {
+        "Entity": "Dem /Lean Dem",
+        "More": 19
+      },
+      {
+        "Entity": "Mod/ Lib",
+        "More": 37
+      },
+      {
+        "Entity": "Conserv",
+        "More": 43
+      },
+      {
+        "Entity": "Re p/Lean Rep",
+        "More": 41
+      },
+      {
+        "Entity": "Total",
+        "More": 29
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "More",
+      "type": "quantitative"
+    }
+  }
+}

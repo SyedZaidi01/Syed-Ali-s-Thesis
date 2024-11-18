@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Yes, states are still holding primaries",
+        "Value": 43
+      },
+      {
+        "Entity": "No answer",
+        "Value": 1
+      },
+      {
+        "Entity": "Not sure",
+        "Value": 41
+      },
+      {
+        "Entity": "No",
+        "Value": 14
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative"
+    }
+  }
+}

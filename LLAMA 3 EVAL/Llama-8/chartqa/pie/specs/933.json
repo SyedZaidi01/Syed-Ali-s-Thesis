@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Pie chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Dem/Lean Dem",
+        "Unfavorable": "68.0",
+        "Favorable": "25.0"
+      },
+      {
+        "Entity": "Rep/Lean Rep",
+        "Unfavorable": "83.0",
+        "Favorable": "nan"
+      },
+      {
+        "Entity": "50+",
+        "Unfavorable": "81.0",
+        "Favorable": "0.0"
+      },
+      {
+        "Entity": "30-49",
+        "Unfavorable": "nan",
+        "Favorable": "23.0"
+      },
+      {
+        "Entity": "Ages 18-29",
+        "Unfavorable": "56.0",
+        "Favorable": "36.0"
+      },
+      {
+        "Entity": "Total",
+        "Unfavorable": "73.0",
+        "Favorable": "22.0"
+      }
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {
+      "field": "Unfavorable",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal"
+    }
+  }
+}

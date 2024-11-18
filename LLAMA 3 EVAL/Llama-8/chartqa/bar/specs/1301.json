@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "50+",
+        "Increase their focus on national interests": "29",
+        "Everthing will stay the same": "32",
+        "Cooperate more with other countries": "37"
+      },
+      {
+        "Entity": "30-49",
+        "Increase their focus on national interests": "34",
+        "Everthing will stay the same": "29",
+        "Cooperate more with other countries": "37"
+      },
+      {
+        "Entity": "18-29",
+        "Increase their focus on national interests": "23",
+        "Everthing will stay the same": "46",
+        "Cooperate more with other countries": "30"
+      },
+      {
+        "Entity": "Ages",
+        "Increase their focus on national interests": "0",
+        "Everthing will stay the same": "0",
+        "Cooperate more with other countries": "0"
+      },
+      {
+        "Entity": "Total",
+        "Increase their focus on national interests": "29",
+        "Everthing will stay the same": "34",
+        "Cooperate more with other countries": "35"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Increase their focus on national interests",
+      "type": "quantitative"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "After the  presidential inauguration in January",
+        "Value": "11"
+      },
+      {
+        "Entity": "NET Necessary",
+        "Value": "80"
+      },
+      {
+        "Entity": "As soon as possible, by the current  Congress and President Trump",
+        "Value": "68"
+      },
+      {
+        "Entity": "Not necessary",
+        "Value": "19"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative"
+    }
+  }
+}

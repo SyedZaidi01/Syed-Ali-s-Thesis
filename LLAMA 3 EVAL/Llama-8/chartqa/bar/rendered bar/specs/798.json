@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Makes significantly more money than them",
+        "Definitely/probably would NOT": 3
+      },
+      {
+        "Entity": "Makes significantly e money than them",
+        "Definitely/probably would NOT": 3
+      },
+      {
+        "Entity": "Is a Democrat",
+        "Definitely/probably would NOT": 11
+      },
+      {
+        "Entity": "Makes significantly less money than them",
+        "Definitely/probably would NOT": 14
+      },
+      {
+        "Entity": "Is of a different race or ethnicity",
+        "Definitely/probably would NOT": 15
+      },
+      {
+        "Entity": "Is sooa different religion",
+        "Definitely/probably would NOT": 23
+      },
+      {
+        "Entity": "Voted for Hillary Clinton",
+        "Definitely/probably would NOT": 26
+      },
+      {
+        "Entity": "Is a Re publican",
+        "Definitely/probably would NOT": 27
+      },
+      {
+        "Entity": "Is raising children from another relationship Is 10 years younger than them*",
+        "Definitely/probably would NOT": 36
+      },
+      {
+        "Entity": "Is 10 years older than them",
+        "Definitely/probably would NOT": 38
+      },
+      {
+        "Entity": "Voted for Donald Trump",
+        "Definitely/probably would NOT": 47
+      },
+      {
+        "Entity": "Has a significant amount of debt",
+        "Definitely/probably would NOT": 49
+      },
+      {
+        "Entity": "Lives far away",
+        "Definitely/probably would NOT": 51
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Definitely/probably would NOT",
+      "type": "quantitative"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Pie chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Reported made-up information intended to mislead the public",
+        "Values": "37.0"
+      },
+      {
+        "Entity": "Published breaking information that hasn't been fully verified",
+        "Values": "56.0"
+      },
+      {
+        "Entity": "Presented factual information to favor one side of an issue",
+        "Values": "67.0"
+      }
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {
+      "field": "Values",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal"
+    }
+  }
+}

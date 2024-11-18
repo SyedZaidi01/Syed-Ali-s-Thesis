@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Dem/Lean Dem",
+        "Prioritize economic relations with China": "20",
+        "Promote human rights in China": "78.0"
+      },
+      {
+        "Entity": "Rep/Lean Rep",
+        "Prioritize economic relations with China": "26",
+        "Promote human rights in China": "70.0"
+      },
+      {
+        "Entity": "50+",
+        "Prioritize economic relations with China": "24",
+        "Promote human rights in China": "nan"
+      },
+      {
+        "Entity": "30-49",
+        "Prioritize economic relations with China": "22",
+        "Promote human rights in China": "75.0"
+      },
+      {
+        "Entity": "Ages 18-29",
+        "Prioritize economic relations with China": "21",
+        "Promote human rights in China": "76.0"
+      },
+      {
+        "Entity": "Total",
+        "Prioritize economic relations with China": "23",
+        "Promote human rights in China": "73.0"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Prioritize economic relations with China",
+      "type": "quantitative"
+    }
+  }
+}

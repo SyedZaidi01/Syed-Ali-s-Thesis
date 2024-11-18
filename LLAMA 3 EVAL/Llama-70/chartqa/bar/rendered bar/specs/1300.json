@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Dem /Lean Dem",
+        "More": 24
+      },
+      {
+        "Entity": "Re p/Lean Rep",
+        "More": 13
+      },
+      {
+        "Entity": "Total",
+        "More": 19
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "More",
+      "type": "quantitative"
+    }
+  }
+}

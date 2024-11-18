@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Pie chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Everyone who wants it will have quick and easy access",
+        "Very": "14",
+        "Somewhat": "34",
+        "Not too/Not atall": "51"
+      },
+      {
+        "Entity": "Enough Americans will get vaccinated to stop the disease's spread",
+        "Very": "11",
+        "Somewhat": "42",
+        "Not too/Not atall": "46"
+      },
+      {
+        "Entity": "understand whether it is safe, effective",
+        "Very": "36",
+        "Somewhat": "41",
+        "Not too/Not atall": "22"
+      },
+      {
+        "Entity": "a vaccine will be used before we fully understand whether it is safe, effective",
+        "Very": "36",
+        "Somewhat": "41",
+        "Not too/Not atall": "22"
+      }
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {
+      "field": "Very",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal"
+    }
+  }
+}

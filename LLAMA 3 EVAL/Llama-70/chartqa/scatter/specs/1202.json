@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "65+",
+        "Been laid off/ lost job": "17",
+        "Had to take cut in a pay": "18",
+        "either/ Net both": "25"
+      },
+      {
+        "Entity": "50-64",
+        "Been laid off/ lost job": "28",
+        "Had to take cut in a pay": "32",
+        "either/ Net both": "42"
+      },
+      {
+        "Entity": "30-49",
+        "Been laid off/ lost job": "30",
+        "Had to take cut in a pay": "39",
+        "either/ Net both": "49"
+      },
+      {
+        "Entity": "Ages 18-29",
+        "Been laid off/ lost job": "35",
+        "Had to take cut in a pay": "45",
+        "either/ Net both": "54"
+      },
+      {
+        "Entity": "All adults",
+        "Been laid off/ lost job": "28",
+        "Had to take cut in a pay": "33",
+        "either/ Net both": "43"
+      }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Been laid off/ lost job",
+      "type": "quantitative"
+    }
+  }
+}

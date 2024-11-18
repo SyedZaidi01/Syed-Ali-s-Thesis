@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "15 COUNTRY MEDIAN",
+        "Bad": 26
+      },
+      {
+        "Entity": "Argentina",
+        "Bad": 35
+      },
+      {
+        "Entity": "Mexico Brazil Argentina",
+        "Bad": 35
+      },
+      {
+        "Entity": "Nigeria Kenya South Africa",
+        "Bad": 30
+      },
+      {
+        "Entity": "Israel Tunisia Lebanon Turkey",
+        "Bad": 48
+      },
+      {
+        "Entity": "Japan Indonesia",
+        "Bad": 42
+      },
+      {
+        "Entity": "South Korea Philippines India Japan Indonesia",
+        "Bad": 42
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Bad",
+      "type": "quantitative"
+    }
+  }
+}

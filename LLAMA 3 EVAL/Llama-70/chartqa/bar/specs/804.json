@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Temporary lawful residents . million ()",
+        "Value": "2.25"
+      },
+      {
+        "Entity": "- a",
+        "Value": "-"
+      },
+      {
+        "Entity": "Naturalized citizens .  million ()",
+        "Value": "20.745"
+      },
+      {
+        "Entity": "Lawful immigrants . million ()",
+        "Value": "35.277"
+      },
+      {
+        "Entity": "Unauthorized immigrants . million ()",
+        "Value": "10.523"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative"
+    }
+  }
+}

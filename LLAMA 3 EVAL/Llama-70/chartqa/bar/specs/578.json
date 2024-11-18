@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "NOT get the vaccine",
+        "A great deal": "8.0",
+        "A fair amount": "37",
+        "Not too much/ None at all": "55"
+      },
+      {
+        "Entity": "Get the vaccine",
+        "A great deal": "30.0",
+        "A fair amount": "54",
+        "Not too much/ None at all": "16"
+      },
+      {
+        "Entity": "Those who would definitely |probably",
+        "A great deal": "nan",
+        "A fair amount": "0",
+        "Not too much/ None at all": "0"
+      },
+      {
+        "Entity": "Dem /lean Dem",
+        "A great deal": "16.0",
+        "A fair amount": "50",
+        "Not too much/ None at all": "34"
+      },
+      {
+        "Entity": "Re p/lean Rep",
+        "A great deal": "23.0",
+        "A fair amount": "41",
+        "Not too much/ None at all": "36"
+      },
+      {
+        "Entity": "U.S adults",
+        "A great deal": "19.0",
+        "A fair amount": "45",
+        "Not too much/ None at all": "35"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "A great deal",
+      "type": "quantitative"
+    }
+  }
+}

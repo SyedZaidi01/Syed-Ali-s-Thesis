@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "50+",
+        "Increase their focus on national interests": 29
+      },
+      {
+        "Entity": "30-49",
+        "Increase their focus on national interests": 34
+      },
+      {
+        "Entity": "18-29",
+        "Increase their focus on national interests": 23
+      },
+      {
+        "Entity": "Ages",
+        "Increase their focus on national interests": 0
+      },
+      {
+        "Entity": "Total",
+        "Increase their focus on national interests": 29
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Increase their focus on national interests",
+      "type": "quantitative"
+    }
+  }
+}

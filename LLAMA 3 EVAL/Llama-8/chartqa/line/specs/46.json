@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "a IVL little",
+        "Value": "12"
+      },
+      {
+        "Entity": "Increased",
+        "Value": "31"
+      },
+      {
+        "Entity": "Stay about A lot the same",
+        "Value": "11"
+      },
+      {
+        "Entity": "A lot",
+        "Value": "11"
+      },
+      {
+        "Entity": "a little",
+        "Value": "20"
+      },
+      {
+        "Entity": "A lot",
+        "Value": "12"
+      },
+      {
+        "Entity": "Decreased",
+        "Value": "25"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative"
+    }
+  }
+}

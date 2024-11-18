@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Dem /lean Dem",
+        "Higher": "66",
+        "About the": "24",
+        "Lower": "9"
+      },
+      {
+        "Entity": "Re p/lean Rep",
+        "Higher": "30",
+        "About the": "40",
+        "Lower": "30"
+      },
+      {
+        "Entity": "U.S adults",
+        "Higher": "49",
+        "About the": "31",
+        "Lower": "18"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Higher",
+      "type": "quantitative"
+    }
+  }
+}

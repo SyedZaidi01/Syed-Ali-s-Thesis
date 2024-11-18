@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "13 COUNTRY MEDIAN",
+        "Unfavorable": 64
+      },
+      {
+        "Entity": "Australia",
+        "Unfavorable": 64
+      },
+      {
+        "Entity": "Japan",
+        "Unfavorable": 54
+      },
+      {
+        "Entity": "South Korea",
+        "Unfavorable": 39
+      },
+      {
+        "Entity": "Belgium MEDIAN",
+        "Unfavorable": 75
+      },
+      {
+        "Entity": "Germany",
+        "Unfavorable": 70
+      },
+      {
+        "Entity": "Netherlands",
+        "Unfavorable": 69
+      },
+      {
+        "Entity": "Sweden",
+        "Unfavorable": 65
+      },
+      {
+        "Entity": "Spain",
+        "Unfavorable": 58
+      },
+      {
+        "Entity": "UK",
+        "Unfavorable": 56
+      },
+      {
+        "Entity": "Italy LUK",
+        "Unfavorable": 56
+      },
+      {
+        "Entity": "Canada",
+        "Unfavorable": 62
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Unfavorable",
+      "type": "quantitative"
+    }
+  }
+}

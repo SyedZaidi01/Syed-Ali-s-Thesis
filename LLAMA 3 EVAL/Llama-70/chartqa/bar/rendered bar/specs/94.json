@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Attending a crowded party",
+        "Uncomfortable": 84
+      },
+      {
+        "Entity": "Attending an indoor sporting event or concert",
+        "Uncomfortable": 80
+      },
+      {
+        "Entity": "Eating out in a restaurant",
+        "Uncomfortable": 55
+      },
+      {
+        "Entity": "Going to a hair salon or barbershop",
+        "Uncomfortable": 47
+      },
+      {
+        "Entity": "family member inside their home",
+        "Uncomfortable": 35
+      },
+      {
+        "Entity": "Visiting with a close friend or family member inside their home",
+        "Uncomfortable": 35
+      },
+      {
+        "Entity": "Going out to the grocery store",
+        "Uncomfortable": 24
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Uncomfortable",
+      "type": "quantitative"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Trump su pporters",
+        "Great": 12
+      },
+      {
+        "Entity": "Biden supporters",
+        "Great": 11
+      },
+      {
+        "Entity": "All voters",
+        "Great": 6
+      },
+      {
+        "Entity": "Donald Trump",
+        "Great": 0
+      },
+      {
+        "Entity": "Joe Biden",
+        "Great": 0
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Great",
+      "type": "quantitative"
+    }
+  }
+}

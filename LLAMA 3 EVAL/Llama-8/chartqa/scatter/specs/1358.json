@@ -1,0 +1,84 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Libera",
+        "Only fair/ poor": "53",
+        "Good/ excellent": "45.0"
+      },
+      {
+        "Entity": "Cons/Mod",
+        "Only fair/ poor": "55",
+        "Good/ excellent": "nan"
+      },
+      {
+        "Entity": "Dem/Lean Dem",
+        "Only fair/ poor": "54",
+        "Good/ excellent": "nan"
+      },
+      {
+        "Entity": "Mod/Lib",
+        "Only fair/ poor": "69",
+        "Good/ excellent": "28.0"
+      },
+      {
+        "Entity": "Conserv",
+        "Only fair/ poor": "80",
+        "Good/ excellent": "nan"
+      },
+      {
+        "Entity": "Rep/Lean Rep",
+        "Only fair/ poor": "76",
+        "Good/ excellent": "21.0"
+      },
+      {
+        "Entity": "College grad Some college HS or less",
+        "Only fair/ poor": "66",
+        "Good/ excellent": "66.0"
+      },
+      {
+        "Entity": "Postgradua te College grad Some college HS for less",
+        "Only fair/ poor": "66",
+        "Good/ excellent": "66.0"
+      },
+      {
+        "Entity": "65+",
+        "Only fair/ poor": "69",
+        "Good/ excellent": "27.0"
+      },
+      {
+        "Entity": "50-64",
+        "Only fair/ poor": "64",
+        "Good/ excellent": "33.0"
+      },
+      {
+        "Entity": "30-49",
+        "Only fair/ poor": "63",
+        "Good/ excellent": "34.0"
+      },
+      {
+        "Entity": "Ages 18-29",
+        "Only fair/ poor": "59",
+        "Good/ excellent": "38.0"
+      },
+      {
+        "Entity": "Total",
+        "Only fair/ poor": "64",
+        "Good/ excellent": "33.0"
+      }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Only fair/ poor",
+      "type": "quantitative"
+    }
+  }
+}

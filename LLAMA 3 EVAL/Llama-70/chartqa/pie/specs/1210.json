@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Pie chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Lebanon",
+        "Better No difference": "nan",
+        "Worse": "75.0"
+      },
+      {
+        "Entity": "Jordan",
+        "Better No difference": "13.0",
+        "Worse": "nan"
+      },
+      {
+        "Entity": "Mexico",
+        "Better No difference": "20.0",
+        "Worse": "55.0"
+      },
+      {
+        "Entity": "Tunisia",
+        "Better No difference": "24.0",
+        "Worse": "0.0"
+      },
+      {
+        "Entity": "South Africa",
+        "Better No difference": "36.0",
+        "Worse": "0.0"
+      }
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {
+      "field": "Better No difference",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal"
+    }
+  }
+}

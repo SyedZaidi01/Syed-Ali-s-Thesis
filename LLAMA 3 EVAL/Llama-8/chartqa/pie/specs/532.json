@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Pie chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "The Chinese government's initial handling of the coronavirus outbreak in Wuhan is not at all for to blame the global spread of the svirus",
+        "Value": "nan"
+      },
+      {
+        "Entity": "The U.S. should hold China responsible for the role it played in the outbreak of the coronavirus, even if it means worsening relations with China",
+        "Value": ".."
+      },
+      {
+        "Entity": "DK/ Refused",
+        "Value": "5"
+      },
+      {
+        "Entity": "The U.S. should prioritize strong U.S. --China relations, even if it means overlooking any role China played in the  outbreak of the coronavirus",
+        "Value": "....--38"
+      },
+      {
+        "Entity": "DK/ Refused",
+        "Value": "5"
+      },
+      {
+        "Entity": "The U.S should prioritize strong U.S.- China relations, even if it means overlooking any role China played in the  outbreak of the coronavirus",
+        "Value": "...-38"
+      },
+      {
+        "Entity": "fused",
+        "Value": "5"
+      },
+      {
+        "Entity": "DK/Refused",
+        "Value": "5"
+      }
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {
+      "field": "Value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal"
+    }
+  }
+}

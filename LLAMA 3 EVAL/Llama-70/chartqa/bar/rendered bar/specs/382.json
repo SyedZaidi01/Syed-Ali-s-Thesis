@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "within a day or two of Election Day",
+        "Very": 52
+      },
+      {
+        "Entity": "Americans know who won the election",
+        "Very": 52
+      },
+      {
+        "Entity": "People who are NOT legally qualified to vote are prevented from casting a ballot",
+        "Very": 65
+      },
+      {
+        "Entity": "want to vote are able to cast a ballot",
+        "Very": 92
+      },
+      {
+        "Entity": "People who are legally qualified and want to vote are able to cast a ballot",
+        "Very": 92
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Very",
+      "type": "quantitative"
+    }
+  }
+}

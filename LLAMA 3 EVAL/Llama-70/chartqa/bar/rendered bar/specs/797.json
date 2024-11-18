@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Having an open",
+        "Never": 48
+      },
+      {
+        "Entity": "exchanging explicit of themselves ages",
+        "Never": 33
+      },
+      {
+        "Entity": "Consenting adults exchanging explicit images of themselves",
+        "Never": 33
+      },
+      {
+        "Entity": "Consenting adults exchanging explicit of themselves ges",
+        "Never": 33
+      },
+      {
+        "Entity": "consenting adults not in committed relationship I",
+        "Never": 24
+      },
+      {
+        "Entity": "consenting adults not in committed relationship a",
+        "Never": 24
+      },
+      {
+        "Entity": "Casual sex between",
+        "Never": 0
+      },
+      {
+        "Entity": "relationship",
+        "Never": 0
+      },
+      {
+        "Entity": "adults in a committed",
+        "Never": 25
+      },
+      {
+        "Entity": "Sex between unmarried",
+        "Never": 0
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Never",
+      "type": "quantitative"
+    }
+  }
+}

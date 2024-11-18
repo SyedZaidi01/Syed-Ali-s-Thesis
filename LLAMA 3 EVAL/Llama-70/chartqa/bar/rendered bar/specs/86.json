@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Year": "Apr",
+        "The worst is still to come": 73
+      },
+      {
+        "Year": "Jun",
+        "The worst is still to come": 59
+      },
+      {
+        "Year": "Nov",
+        "The worst is still to come": 71
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "The worst is still to come",
+      "type": "quantitative"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "13 COUNTRY MEDIAN",
+        "Unfavorable": "64",
+        "Favorable": "34.0"
+      },
+      {
+        "Entity": "Australia",
+        "Unfavorable": "64",
+        "Favorable": "nan"
+      },
+      {
+        "Entity": "Japan",
+        "Unfavorable": "54",
+        "Favorable": "nan"
+      },
+      {
+        "Entity": "South Korea",
+        "Unfavorable": "39",
+        "Favorable": "59.0"
+      },
+      {
+        "Entity": "Belgium MEDIAN",
+        "Unfavorable": "75",
+        "Favorable": "65.0"
+      },
+      {
+        "Entity": "Germany",
+        "Unfavorable": "70",
+        "Favorable": "26.0"
+      },
+      {
+        "Entity": "Netherlands",
+        "Unfavorable": "69",
+        "Favorable": "30.0"
+      },
+      {
+        "Entity": "Sweden",
+        "Unfavorable": "65",
+        "Favorable": "33.0"
+      },
+      {
+        "Entity": "Spain",
+        "Unfavorable": "58",
+        "Favorable": "40.0"
+      },
+      {
+        "Entity": "UK",
+        "Unfavorable": "56",
+        "Favorable": "nan"
+      },
+      {
+        "Entity": "Italy LUK",
+        "Unfavorable": "56",
+        "Favorable": "55.0"
+      },
+      {
+        "Entity": "Canada",
+        "Unfavorable": "62",
+        "Favorable": "35.0"
+      }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Unfavorable",
+      "type": "quantitative"
+    }
+  }
+}

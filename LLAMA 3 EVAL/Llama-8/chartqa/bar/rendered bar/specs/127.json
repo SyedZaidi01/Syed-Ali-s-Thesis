@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Year": 2009,
+        "Rep/Lean Rep": 49
+      },
+      {
+        "Year": 2010,
+        "Rep/Lean Rep": 49
+      },
+      {
+        "Year": 2011,
+        "Rep/Lean Rep": 53
+      },
+      {
+        "Year": 2012,
+        "Rep/Lean Rep": 50
+      },
+      {
+        "Year": 2013,
+        "Rep/Lean Rep": 43
+      },
+      {
+        "Year": 2014,
+        "Rep/Lean Rep": 0
+      },
+      {
+        "Year": 2015,
+        "Rep/Lean Rep": 0
+      },
+      {
+        "Year": 2016,
+        "Rep/Lean Rep": 51
+      },
+      {
+        "Year": 2017,
+        "Rep/Lean Rep": 48
+      },
+      {
+        "Year": 2018,
+        "Rep/Lean Rep": 52
+      },
+      {
+        "Year": 2019,
+        "Rep/Lean Rep": 45
+      },
+      {
+        "Year": 2020,
+        "Rep/Lean Rep": 46
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Rep/Lean Rep",
+      "type": "quantitative"
+    }
+  }
+}

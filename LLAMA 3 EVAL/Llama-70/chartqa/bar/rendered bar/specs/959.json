@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "College+",
+        "Often": 20
+      },
+      {
+        "Entity": "Some college",
+        "Often": 16
+      },
+      {
+        "Entity": "HS or less",
+        "Often": 14
+      },
+      {
+        "Entity": "50+",
+        "Often": 9
+      },
+      {
+        "Entity": "30-49",
+        "Often": 17
+      },
+      {
+        "Entity": "Ages 18-29",
+        "Often": 20
+      },
+      {
+        "Entity": "Hispanic",
+        "Often": 19
+      },
+      {
+        "Entity": "Black",
+        "Often": 13
+      },
+      {
+        "Entity": "White",
+        "Often": 16
+      },
+      {
+        "Entity": "Total",
+        "Often": 17
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Often",
+      "type": "quantitative"
+    }
+  }
+}

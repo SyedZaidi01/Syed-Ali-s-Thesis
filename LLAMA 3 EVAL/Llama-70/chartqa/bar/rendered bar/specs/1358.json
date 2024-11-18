@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Libera",
+        "Only fair/ poor": 53
+      },
+      {
+        "Entity": "Cons/Mod",
+        "Only fair/ poor": 55
+      },
+      {
+        "Entity": "Dem/Lean Dem",
+        "Only fair/ poor": 54
+      },
+      {
+        "Entity": "Mod/Lib",
+        "Only fair/ poor": 69
+      },
+      {
+        "Entity": "Conserv",
+        "Only fair/ poor": 80
+      },
+      {
+        "Entity": "Rep/Lean Rep",
+        "Only fair/ poor": 76
+      },
+      {
+        "Entity": "College grad Some college HS or less",
+        "Only fair/ poor": 66
+      },
+      {
+        "Entity": "Postgradua te College grad Some college HS for less",
+        "Only fair/ poor": 66
+      },
+      {
+        "Entity": "65+",
+        "Only fair/ poor": 69
+      },
+      {
+        "Entity": "50-64",
+        "Only fair/ poor": 64
+      },
+      {
+        "Entity": "30-49",
+        "Only fair/ poor": 63
+      },
+      {
+        "Entity": "Ages 18-29",
+        "Only fair/ poor": 59
+      },
+      {
+        "Entity": "Total",
+        "Only fair/ poor": 64
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Only fair/ poor",
+      "type": "quantitative"
+    }
+  }
+}

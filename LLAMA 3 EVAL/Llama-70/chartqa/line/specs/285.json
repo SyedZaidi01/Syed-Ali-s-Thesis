@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Dem /Lean Dem",
+        "Not very not at all": "76",
+        "Very/ somewhat": "23"
+      },
+      {
+        "Entity": "Re p/Lean Rep",
+        "Not very not at all": "78",
+        "Very/ somewhat": "21"
+      },
+      {
+        "Entity": "65+",
+        "Not very not at all": "87",
+        "Very/ somewhat": "12"
+      },
+      {
+        "Entity": "50-64",
+        "Not very not at all": "78",
+        "Very/ somewhat": "21"
+      },
+      {
+        "Entity": "30-49",
+        "Not very not at all": "74",
+        "Very/ somewhat": "25"
+      },
+      {
+        "Entity": "Ages 18-29",
+        "Not very not at all": "71",
+        "Very/ somewhat": "28"
+      },
+      {
+        "Entity": "Asian *",
+        "Not very not at all": "70",
+        "Very/ somewhat": "30"
+      },
+      {
+        "Entity": "Hispanic",
+        "Not very not at all": "69",
+        "Very/ somewhat": "29"
+      },
+      {
+        "Entity": "Black",
+        "Not very not at all": "66",
+        "Very/ somewhat": "33"
+      },
+      {
+        "Entity": "White",
+        "Not very not at all": "82",
+        "Very/ somewhat": "17"
+      },
+      {
+        "Entity": "adults",
+        "Not very not at all": "77",
+        "Very/ somewhat": "22"
+      },
+      {
+        "Entity": "ULS adults",
+        "Not very not at all": "77",
+        "Very/ somewhat": "22"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Not very not at all",
+      "type": "quantitative"
+    }
+  }
+}

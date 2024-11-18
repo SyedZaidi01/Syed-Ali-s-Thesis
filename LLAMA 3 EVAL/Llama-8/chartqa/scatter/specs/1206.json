@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Lebanon",
+        "Better No difference": "nan",
+        "No difference": "75.0",
+        "Worse": "0.0"
+      },
+      {
+        "Entity": "Jordan",
+        "Better No difference": "13.0",
+        "No difference": "nan",
+        "Worse": "0.0"
+      },
+      {
+        "Entity": "Mexico",
+        "Better No difference": "20.0",
+        "No difference": "55.0",
+        "Worse": "22.0"
+      },
+      {
+        "Entity": "Tunisia",
+        "Better No difference": "24.0",
+        "No difference": "36.0",
+        "Worse": "0.0"
+      },
+      {
+        "Entity": "South Africa",
+        "Better No difference": "36.0",
+        "No difference": "33.0",
+        "Worse": "0.0"
+      },
+      {
+        "Entity": "Venezuela",
+        "Better No difference": "nan",
+        "No difference": "nan",
+        "Worse": "nan"
+      }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Better No difference",
+      "type": "quantitative"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Democrat",
+        "Tend to favor one side": "29",
+        "fairly Deal with all sides": "69"
+      },
+      {
+        "Entity": "Independent",
+        "Tend to favor one side": "47",
+        "fairly Deal with all sides": "51"
+      },
+      {
+        "Entity": "Republican",
+        "Tend to favor one side": "70",
+        "fairly Deal with all sides": "28"
+      },
+      {
+        "Entity": "Total",
+        "Tend to favor one side": "48",
+        "fairly Deal with all sides": "50"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Tend to favor one side",
+      "type": "quantitative"
+    }
+  }
+}

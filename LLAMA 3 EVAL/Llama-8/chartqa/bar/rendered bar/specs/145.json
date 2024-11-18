@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "65+",
+        "China": 26
+      },
+      {
+        "Entity": "50-64",
+        "China": 32
+      },
+      {
+        "Entity": "30-49",
+        "China": 36
+      },
+      {
+        "Entity": "Ages 18-29",
+        "China": 47
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "China",
+      "type": "quantitative"
+    }
+  }
+}

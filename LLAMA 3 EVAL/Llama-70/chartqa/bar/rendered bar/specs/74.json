@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Five",
+        "Value": 10.0
+      },
+      {
+        "Entity": NaN,
+        "Value": 23.0
+      },
+      {
+        "Entity": "Three",
+        "Value": 17.0
+      },
+      {
+        "Entity": "One",
+        "Value": 15.0
+      },
+      {
+        "Entity": "One",
+        "Value": 15.0
+      },
+      {
+        "Entity": NaN,
+        "Value": NaN
+      },
+      {
+        "Entity": "No answer",
+        "Value": 1.0
+      },
+      {
+        "Entity": "Four",
+        "Value": 13.0
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative"
+    }
+  }
+}

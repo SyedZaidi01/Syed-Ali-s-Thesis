@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Central Americans fleeing Mexico to Colombia Migrants living in Colombia",
+        "Unfavorable": "54",
+        "Favorable": "48"
+      },
+      {
+        "Entity": "Mexico Central Americans fleeing to Mexico Colombia Migrants living in Colombia",
+        "Unfavorable": "54",
+        "Favorable": "48"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Unfavorable",
+      "type": "quantitative"
+    }
+  }
+}

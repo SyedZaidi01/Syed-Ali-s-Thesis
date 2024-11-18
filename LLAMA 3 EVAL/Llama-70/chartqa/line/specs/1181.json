@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "More coal mining",
+        "Oppose": "65",
+        "Favor": "33"
+      },
+      {
+        "Entity": "fracturing More hydraulic",
+        "Oppose": "60",
+        "Favor": "37"
+      },
+      {
+        "Entity": "More offshore oil and gas More hydraulic fracturing",
+        "Oppose": "60",
+        "Favor": "58"
+      },
+      {
+        "Entity": "More nuclear power plants",
+        "Oppose": "55",
+        "Favor": "43"
+      },
+      {
+        "Entity": "More wind turbine farms",
+        "Oppose": "16",
+        "Favor": "83"
+      },
+      {
+        "Entity": "More solar panel farms",
+        "Oppose": "9",
+        "Favor": "90"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Oppose",
+      "type": "quantitative"
+    }
+  }
+}

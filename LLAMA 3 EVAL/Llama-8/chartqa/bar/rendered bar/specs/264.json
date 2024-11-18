@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "health care providers",
+        "Very/somewhat confident": 81
+      },
+      {
+        "Entity": "Their medical doctors or",
+        "Very/somewhat confident": 81
+      },
+      {
+        "Entity": "organizations",
+        "Very/somewhat confident": 59
+      },
+      {
+        "Entity": "Public health",
+        "Very/somewhat confident": 59
+      },
+      {
+        "Entity": "The federal government",
+        "Very/somewhat confident": 49
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Very/somewhat confident",
+      "type": "quantitative"
+    }
+  }
+}

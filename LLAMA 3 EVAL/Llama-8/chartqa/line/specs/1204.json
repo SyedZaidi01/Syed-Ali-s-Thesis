@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "65+",
+        "High distress": "15",
+        "Medium distress": "23",
+        "Low distress": "61"
+      },
+      {
+        "Entity": "50-64",
+        "High distress": "22",
+        "Medium distress": "25",
+        "Low distress": "52"
+      },
+      {
+        "Entity": "30-49",
+        "High distress": "25",
+        "Medium distress": "26",
+        "Low distress": "47"
+      },
+      {
+        "Entity": "Ages 18-29",
+        "High distress": "33",
+        "Medium distress": "28",
+        "Low distress": "38"
+      },
+      {
+        "Entity": "All adults",
+        "High distress": "24",
+        "Medium distress": "26",
+        "Low distress": "49"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "High distress",
+      "type": "quantitative"
+    }
+  }
+}

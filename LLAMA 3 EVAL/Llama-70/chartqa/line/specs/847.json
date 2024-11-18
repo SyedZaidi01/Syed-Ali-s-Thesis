@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Liberal Dem",
+        "Expanding fossil fuels": "3",
+        "Developing alternative energy": "97"
+      },
+      {
+        "Entity": "Mod/ cons Dem",
+        "Expanding fossil fuels": "12",
+        "Developing alternative energy": "88"
+      },
+      {
+        "Entity": "Mod/ lib Rep",
+        "Expanding fossil fuels": "18",
+        "Developing alternative energy": "81"
+      },
+      {
+        "Entity": "Conservative Rep",
+        "Expanding fossil fuels": "45",
+        "Developing alternative energy": "54"
+      },
+      {
+        "Entity": "Dem /lean Dem",
+        "Expanding fossil fuels": "891",
+        "Developing alternative energy": "91"
+      },
+      {
+        "Entity": "Re p/lean Rep",
+        "Expanding fossil fuels": "35",
+        "Developing alternative energy": "65"
+      },
+      {
+        "Entity": "U.S adults",
+        "Expanding fossil fuels": "20",
+        "Developing alternative energy": "79"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Expanding fossil fuels",
+      "type": "quantitative"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Pie chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "China",
+        "Poor": "37.0",
+        "Only fair": "26.0",
+        "Good": "26.0",
+        "Excellent": "0"
+      },
+      {
+        "Entity": "Italy",
+        "Poor": "27.0",
+        "Only fair": "36.0",
+        "Good": "28.0",
+        "Excellent": "0"
+      },
+      {
+        "Entity": "who",
+        "Poor": "24.0",
+        "Only fair": "nan",
+        "Good": "nan",
+        "Excellent": "0"
+      },
+      {
+        "Entity": "U.S.",
+        "Poor": "nan",
+        "Only fair": "nan",
+        "Good": "nan",
+        "Excellent": "10"
+      },
+      {
+        "Entity": "UK",
+        "Poor": "38.0",
+        "Only fair": "nan",
+        "Good": "0.0",
+        "Excellent": "0"
+      },
+      {
+        "Entity": "Germany",
+        "Poor": "25.0",
+        "Only fair": "51.0",
+        "Good": "15.0",
+        "Excellent": "0"
+      },
+      {
+        "Entity": "South Korea",
+        "Poor": "7.0",
+        "Only fair": "22.0",
+        "Good": "41.0",
+        "Excellent": "25"
+      }
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {
+      "field": "Poor",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal"
+    }
+  }
+}

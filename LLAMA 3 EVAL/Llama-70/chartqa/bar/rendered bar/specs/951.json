@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Not at all successful",
+        "Value": 5
+      },
+      {
+        "Entity": "Somewhat successful",
+        "Value": 60
+      },
+      {
+        "Entity": "Not too successful",
+        "Value": 26
+      },
+      {
+        "Entity": "Very successful",
+        "Value": 8
+      },
+      {
+        "Entity": "No answer",
+        "Value": 1
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative"
+    }
+  }
+}

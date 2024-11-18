@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Dem/Lean Dem",
+        "a great deal": "60.0",
+        "a fair amount": "nan",
+        "Not too much": "0.0",
+        "Nothingatall": "0.0"
+      },
+      {
+        "Entity": "Rep/Lean Rep",
+        "a great deal": "28.0",
+        "a fair amount": "47.0",
+        "Not too much": "nan",
+        "Nothingatall": "0.0"
+      },
+      {
+        "Entity": "HS for less",
+        "a great deal": "4.1",
+        "a fair amount": "38.0",
+        "Not too much": "16.0",
+        "Nothingatall": "0.0"
+      },
+      {
+        "Entity": "Some college",
+        "a great deal": "44.0",
+        "a fair amount": "38.0",
+        "Not too much": "nan",
+        "Nothingatall": "0.0"
+      },
+      {
+        "Entity": "College grad",
+        "a great deal": "50.0",
+        "a fair amount": "39.0",
+        "Not too much": "0.0",
+        "Nothingatall": "0.0"
+      },
+      {
+        "Entity": "Postgrad uate",
+        "a great deal": "56.0",
+        "a fair amount": "35.0",
+        "Not too much": "nan",
+        "Nothingatall": "0.0"
+      },
+      {
+        "Entity": "Hispanic",
+        "a great deal": "53.0",
+        "a fair amount": "33.0",
+        "Not too much": "nan",
+        "Nothingatall": "nan"
+      },
+      {
+        "Entity": "Black",
+        "a great deal": "56.0",
+        "a fair amount": "31.0",
+        "Not too much": "nan",
+        "Nothingatall": "nan"
+      },
+      {
+        "Entity": "White",
+        "a great deal": "nan",
+        "a fair amount": "nan",
+        "Not too much": "14.0",
+        "Nothingatall": "nan"
+      },
+      {
+        "Entity": "Total",
+        "a great deal": "4638.0",
+        "a fair amount": "38.0",
+        "Not too much": "13.0",
+        "Nothingatall": "3.0"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "a great deal",
+      "type": "quantitative"
+    }
+  }
+}

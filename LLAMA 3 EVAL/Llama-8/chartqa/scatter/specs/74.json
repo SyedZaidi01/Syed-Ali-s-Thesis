@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Five",
+        "Value": "10.0"
+      },
+      {
+        "Entity": "None",
+        "Value": "23.0"
+      },
+      {
+        "Entity": "Three",
+        "Value": "17.0"
+      },
+      {
+        "Entity": "One",
+        "Value": "15.0"
+      },
+      {
+        "Entity": "One",
+        "Value": "15.0"
+      },
+      {
+        "Entity": "nan",
+        "Value": "nan"
+      },
+      {
+        "Entity": "No answer",
+        "Value": "1.0"
+      },
+      {
+        "Entity": "Four",
+        "Value": "13.0"
+      }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative"
+    }
+  }
+}

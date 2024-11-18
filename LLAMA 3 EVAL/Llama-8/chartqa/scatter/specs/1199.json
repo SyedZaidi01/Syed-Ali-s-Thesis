@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Foreign born",
+        "Not be allowed to stay in the country legally": "94",
+        "Have a way to stay in U.S. legally, if certain requirements met are": "0"
+      },
+      {
+        "Entity": "U.S born",
+        "Not be allowed to stay in the country legally": "17",
+        "Have a way to stay in U.S. legally, if certain requirements met are": "82"
+      },
+      {
+        "Entity": "Among Hispanics",
+        "Not be allowed to stay in the country legally": "0",
+        "Have a way to stay in U.S. legally, if certain requirements met are": "0"
+      },
+      {
+        "Entity": "Hispanic",
+        "Not be allowed to stay in the country legally": "12",
+        "Have a way to stay in U.S. legally, if certain requirements met are": "87"
+      },
+      {
+        "Entity": "Asian *",
+        "Not be allowed to stay in the country legally": "22",
+        "Have a way to stay in U.S. legally, if certain requirements met are": "76"
+      },
+      {
+        "Entity": "Black",
+        "Not be allowed to stay in the country legally": "18",
+        "Have a way to stay in U.S. legally, if certain requirements met are": "81"
+      },
+      {
+        "Entity": "White",
+        "Not be allowed to stay in the country legally": "29",
+        "Have a way to stay in U.S. legally, if certain requirements met are": "70"
+      },
+      {
+        "Entity": "Re p/Lean Rep",
+        "Not be allowed to stay in the country legally": "42",
+        "Have a way to stay in U.S. legally, if certain requirements met are": "57"
+      },
+      {
+        "Entity": "Dem /Lean Dem",
+        "Not be allowed to stay in the country legally": "10",
+        "Have a way to stay in U.S. legally, if certain requirements met are": "89"
+      },
+      {
+        "Entity": "Total",
+        "Not be allowed to stay in the country legally": "24",
+        "Have a way to stay in U.S. legally, if certain requirements met are": "75"
+      }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Not be allowed to stay in the country legally",
+      "type": "quantitative"
+    }
+  }
+}

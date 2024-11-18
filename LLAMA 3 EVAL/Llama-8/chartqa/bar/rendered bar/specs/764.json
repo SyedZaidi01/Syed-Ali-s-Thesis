@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Elected officials",
+        "Great deal": 33
+      },
+      {
+        "Entity": "Business leaders",
+        "Great deal": 5
+      },
+      {
+        "Entity": "Journalists",
+        "Great deal": 9
+      },
+      {
+        "Entity": "Religious leaders",
+        "Great deal": 17
+      },
+      {
+        "Entity": "The military",
+        "Great deal": 38
+      },
+      {
+        "Entity": "Scientists",
+        "Great deal": 39
+      },
+      {
+        "Entity": "Medical scientists",
+        "Great deal": 43
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Great deal",
+      "type": "quantitative"
+    }
+  }
+}

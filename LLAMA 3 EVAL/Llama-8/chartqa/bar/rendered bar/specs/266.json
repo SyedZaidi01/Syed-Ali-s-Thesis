@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "infectious diseases",
+        "Acceptable": 75
+      },
+      {
+        "Entity": "Researchers who study infectious diseases",
+        "Acceptable": 75
+      },
+      {
+        "Entity": "companies",
+        "Acceptable": 40
+      },
+      {
+        "Entity": "Pharmaceutical",
+        "Acceptable": 40
+      },
+      {
+        "Entity": "Health insurance",
+        "Acceptable": 40
+      },
+      {
+        "Entity": "officials",
+        "Acceptable": 37
+      },
+      {
+        "Entity": "State and local elected",
+        "Acceptable": 37
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Acceptable",
+      "type": "quantitative"
+    }
+  }
+}

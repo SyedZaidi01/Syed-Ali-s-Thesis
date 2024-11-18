@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Not at all confident",
+        "Among those who say they are keep their personal records safe": 21
+      },
+      {
+        "Entity": "Not too confident",
+        "Among those who say they are keep their personal records safe": 36
+      },
+      {
+        "Entity": "Somewhat confident",
+        "Among those who say they are keep their personal records safe": 56
+      },
+      {
+        "Entity": "Very confident",
+        "Among those who say they are keep their personal records safe": 70
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Among those who say they are keep their personal records safe",
+      "type": "quantitative"
+    }
+  }
+}

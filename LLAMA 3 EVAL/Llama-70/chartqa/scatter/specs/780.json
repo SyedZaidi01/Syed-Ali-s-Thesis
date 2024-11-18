@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Moderate/ Liberal",
+        "Vote in person on Election Day": "51",
+        "Vote early": "20",
+        "Vote by mail": "22"
+      },
+      {
+        "Entity": "Conservative",
+        "Vote in person on Election Day": "62",
+        "Vote early": "20",
+        "Vote by mail": "17"
+      },
+      {
+        "Entity": "Very conservative",
+        "Vote in person on Election Day": "68",
+        "Vote early": "19",
+        "Vote by mail": "11"
+      },
+      {
+        "Entity": "Trump voters",
+        "Vote in person on Election Day": "60",
+        "Vote early": "20",
+        "Vote by mail": "17"
+      }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Vote in person on Election Day",
+      "type": "quantitative"
+    }
+  }
+}

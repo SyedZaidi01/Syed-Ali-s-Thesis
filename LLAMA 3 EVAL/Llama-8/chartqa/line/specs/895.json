@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Dem /Lean Dem",
+        "More people are being tested than in previous months": "19",
+        "There are more new infections, not just more tests": "80"
+      },
+      {
+        "Entity": "Re p/Lean Rep",
+        "More people are being tested than in previous months": "62",
+        "There are more new infections, not just more tests": "36"
+      },
+      {
+        "Entity": "Total",
+        "More people are being tested than in previous months": "39",
+        "There are more new infections, not just more tests": "60"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "More people are being tested than in previous months",
+      "type": "quantitative"
+    }
+  }
+}

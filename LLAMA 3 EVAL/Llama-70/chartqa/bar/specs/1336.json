@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "May 5",
+        "A great deal": "38",
+        "a fair amount": "40",
+        "Not too much/Not at all": "20"
+      },
+      {
+        "Entity": "Still in effect on",
+        "A great deal": "38",
+        "a fair amount": "40",
+        "Not too much/Not at all": "20"
+      },
+      {
+        "Entity": "ended before May 5",
+        "A great deal": "38",
+        "a fair amount": "38",
+        "Not too much/Not at all": "49"
+      },
+      {
+        "Entity": "Never in effect or",
+        "A great deal": "38",
+        "a fair amount": "38",
+        "Not too much/Not at all": "49"
+      },
+      {
+        "Entity": "Among Dem/lean De where stay-at-home Never in effect or",
+        "A great deal": "28",
+        "a fair amount": "28",
+        "Not too much/Not at all": "8"
+      },
+      {
+        "Entity": "Among Rep/lean Re where stay-at-home Never in effect or",
+        "A great deal": "38",
+        "a fair amount": "0",
+        "Not too much/Not at all": "0"
+      },
+      {
+        "Entity": "Dem I lean Dem",
+        "A great deal": "47",
+        "a fair amount": "37",
+        "Not too much/Not at all": "16"
+      },
+      {
+        "Entity": "Rep/ lean Rep",
+        "A great deal": "38",
+        "a fair amount": "44",
+        "Not too much/Not at all": "17"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "A great deal",
+      "type": "quantitative"
+    }
+  }
+}

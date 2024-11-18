@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Pie chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Foreign born",
+        "Oppose": "92",
+        "Favor": "0"
+      },
+      {
+        "Entity": "ULS born",
+        "Oppose": "14",
+        "Favor": "86"
+      },
+      {
+        "Entity": "Among Hispanics",
+        "Oppose": "0",
+        "Favor": "0"
+      },
+      {
+        "Entity": "Hispanic",
+        "Oppose": "11",
+        "Favor": "88"
+      },
+      {
+        "Entity": "Asian *",
+        "Oppose": "27",
+        "Favor": "72"
+      },
+      {
+        "Entity": "Black",
+        "Oppose": "16",
+        "Favor": "82"
+      },
+      {
+        "Entity": "White",
+        "Oppose": "29",
+        "Favor": "69"
+      },
+      {
+        "Entity": "Re p/Lean Rep",
+        "Oppose": "43",
+        "Favor": "54"
+      },
+      {
+        "Entity": "Dem /Lean Dem",
+        "Oppose": "8",
+        "Favor": "91"
+      },
+      {
+        "Entity": "Total",
+        "Oppose": "24",
+        "Favor": "74"
+      }
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {
+      "field": "Oppose",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal"
+    }
+  }
+}

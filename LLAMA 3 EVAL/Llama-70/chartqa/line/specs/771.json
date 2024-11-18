@@ -1,0 +1,84 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "14-COUNTRY MEDIAN",
+        "Divided": "48.0",
+        "United": "46.0"
+      },
+      {
+        "Entity": "Japan",
+        "Divided": "27.0",
+        "United": "nan"
+      },
+      {
+        "Entity": "Australia",
+        "Divided": "40.0",
+        "United": "54.0"
+      },
+      {
+        "Entity": "South Korea",
+        "Divided": "36.0",
+        "United": "56.0"
+      },
+      {
+        "Entity": "Spain median",
+        "Divided": "59.0",
+        "United": "53.0"
+      },
+      {
+        "Entity": "Belgium France Germany",
+        "Divided": "55.0",
+        "United": "54.0"
+      },
+      {
+        "Entity": "Netherlands",
+        "Divided": "53.0",
+        "United": "nan"
+      },
+      {
+        "Entity": "Altaly",
+        "Divided": "54.0",
+        "United": "45.0"
+      },
+      {
+        "Entity": "UK",
+        "Divided": "46.0",
+        "United": "46.0"
+      },
+      {
+        "Entity": "Sweden",
+        "Divided": "36.0",
+        "United": "58.0"
+      },
+      {
+        "Entity": "Denmark",
+        "Divided": "25.0",
+        "United": "nan"
+      },
+      {
+        "Entity": "U.S",
+        "Divided": "nan",
+        "United": "18.0"
+      },
+      {
+        "Entity": "Canada",
+        "Divided": "29.0",
+        "United": "66.0"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Divided",
+      "type": "quantitative"
+    }
+  }
+}

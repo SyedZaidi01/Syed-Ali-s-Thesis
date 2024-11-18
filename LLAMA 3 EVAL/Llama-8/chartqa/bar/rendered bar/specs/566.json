@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Cares about the needs ordinary people of",
+        "No": 58
+      },
+      {
+        "Entity": "Promotes action on change climate",
+        "No": 47
+      },
+      {
+        "Entity": "Deals effectively with problems international",
+        "No": 44
+      },
+      {
+        "Entity": "Promotes economic development",
+        "No": 36
+      },
+      {
+        "Entity": "Promotes action on infectious diseases like coronavirus",
+        "No": 34
+      },
+      {
+        "Entity": "Advances the interests like of countries fours",
+        "No": 33
+      },
+      {
+        "Entity": "Promotes human rights",
+        "No": 31
+      },
+      {
+        "Entity": "Promotes peace",
+        "No": 27
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "No",
+      "type": "quantitative"
+    }
+  }
+}

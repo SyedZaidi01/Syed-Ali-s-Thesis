@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Pie chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Temporarily cutting workers payroll Social Security and Medicare taxes",
+        "Strongly Strongly oppose favor": "314620",
+        "Somewhat oppose": "46",
+        "Somewhat favor": "20",
+        "Strongly favor": "26"
+      },
+      {
+        "Entity": "benefits beyond July 31",
+        "Strongly Strongly oppose favor": "314620",
+        "Somewhat oppose": "0",
+        "Somewhat favor": "0",
+        "Strongly favor": "0"
+      },
+      {
+        "Entity": "Extending the $600-per-week increase in unemployment",
+        "Strongly Strongly oppose favor": "39",
+        "Somewhat oppose": "20",
+        "Somewhat favor": "19",
+        "Strongly favor": "27"
+      },
+      {
+        "Entity": "state and local governments",
+        "Strongly Strongly oppose favor": "23",
+        "Somewhat oppose": "9",
+        "Somewhat favor": "14",
+        "Strongly favor": "39"
+      },
+      {
+        "Entity": "Providing financial assistance to",
+        "Strongly Strongly oppose favor": "23",
+        "Somewhat oppose": "9",
+        "Somewhat favor": "14",
+        "Strongly favor": "39"
+      },
+      {
+        "Entity": "keeping workers on payroll",
+        "Strongly Strongly oppose favor": "0",
+        "Somewhat oppose": "0",
+        "Somewhat favor": "0",
+        "Strongly favor": "0"
+      },
+      {
+        "Entity": "and loans to businesses",
+        "Strongly Strongly oppose favor": "11",
+        "Somewhat oppose": "8",
+        "Somewhat favor": "42",
+        "Strongly favor": "45"
+      },
+      {
+        "Entity": "additional tax cuts oans to businesses",
+        "Strongly Strongly oppose favor": "11",
+        "Somewhat oppose": "8",
+        "Somewhat favor": "42",
+        "Strongly favor": "45"
+      },
+      {
+        "Entity": "Providing additional tax cuts and loans to businesses",
+        "Strongly Strongly oppose favor": "11",
+        "Somewhat oppose": "8",
+        "Somewhat favor": "42",
+        "Strongly favor": "45"
+      },
+      {
+        "Entity": "Preventing evictions, foreclosures on those who have lost jobs or income",
+        "Strongly Strongly oppose favor": "12",
+        "Somewhat oppose": "12",
+        "Somewhat favor": "12",
+        "Strongly favor": "3"
+      }
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {
+      "field": "Strongly Strongly oppose favor",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal"
+    }
+  }
+}

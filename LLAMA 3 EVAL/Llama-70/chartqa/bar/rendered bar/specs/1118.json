@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "research study",
+        "Done in the past 12 months": 6
+      },
+      {
+        "Entity": "Participated in a medical or clinical",
+        "Done in the past 12 months": 6
+      },
+      {
+        "Entity": "Donated blood",
+        "Done in the past 12 months": 8
+      },
+      {
+        "Entity": "Citizen science activities",
+        "Done in the past 12 months": 10
+      },
+      {
+        "Entity": "or science research",
+        "Done in the past 12 months": 13
+      },
+      {
+        "Entity": "Donated money to support medical or science research",
+        "Done in the past 12 months": 13
+      },
+      {
+        "Entity": "project",
+        "Done in the past 12 months": 19
+      },
+      {
+        "Entity": "Helped a child with a science",
+        "Done in the past 12 months": 19
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Done in the past 12 months",
+      "type": "quantitative"
+    }
+  }
+}

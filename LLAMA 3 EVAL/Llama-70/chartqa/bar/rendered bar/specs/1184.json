@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "national parks",
+        "Too little": 54
+      },
+      {
+        "Entity": "Protect open lands in",
+        "Too little": 54
+      },
+      {
+        "Entity": "habitats",
+        "Too little": 62
+      },
+      {
+        "Entity": "Protect animals and their",
+        "Too little": 62
+      },
+      {
+        "Entity": "change",
+        "Too little": 65
+      },
+      {
+        "Entity": "Reduce effects of climate",
+        "Too little": 65
+      },
+      {
+        "Entity": "Protect air quality",
+        "Too little": 65
+      },
+      {
+        "Entity": "rivers and streams",
+        "Too little": 67
+      },
+      {
+        "Entity": "Protect water quality of lakes, rivers and streams",
+        "Too little": 67
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Too little",
+      "type": "quantitative"
+    }
+  }
+}

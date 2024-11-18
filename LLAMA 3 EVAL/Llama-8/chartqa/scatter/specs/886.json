@@ -1,0 +1,84 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "15 COUNTRY MEDIAN",
+        "Bad": "58.0",
+        "Good": "nan"
+      },
+      {
+        "Entity": "Argentina",
+        "Bad": "63.0",
+        "Good": "nan"
+      },
+      {
+        "Entity": "Brazil Argentina",
+        "Bad": "63.0",
+        "Good": "52.0"
+      },
+      {
+        "Entity": "Mexico Brazil Argentina",
+        "Bad": "63.0",
+        "Good": "52.0"
+      },
+      {
+        "Entity": "Mexico Brazil gentina",
+        "Bad": "63.0",
+        "Good": "52.0"
+      },
+      {
+        "Entity": "Nigeria",
+        "Bad": "60.0",
+        "Good": "38.0"
+      },
+      {
+        "Entity": "Kenya Nigeria",
+        "Bad": "60.0",
+        "Good": "58.0"
+      },
+      {
+        "Entity": "South Africa",
+        "Bad": "51.0",
+        "Good": "45.0"
+      },
+      {
+        "Entity": "Turkey",
+        "Bad": "70.0",
+        "Good": "nan"
+      },
+      {
+        "Entity": "Israel Lebanon Tunisia Turkey",
+        "Bad": "70.0",
+        "Good": "66.0"
+      },
+      {
+        "Entity": "Japan Indonesia South Korea",
+        "Bad": "nan",
+        "Good": "59.0"
+      },
+      {
+        "Entity": "India",
+        "Bad": "4.0",
+        "Good": "nan"
+      },
+      {
+        "Entity": "Philippines India",
+        "Bad": "4.0",
+        "Good": "46.0"
+      }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Bad",
+      "type": "quantitative"
+    }
+  }
+}

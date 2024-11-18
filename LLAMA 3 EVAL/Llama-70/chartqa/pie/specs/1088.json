@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Pie chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Trump su pporters",
+        "Great": "12",
+        "Good": "26",
+        "Average": "61",
+        "Poor": "0",
+        "Terrible": "0"
+      },
+      {
+        "Entity": "Biden supporters",
+        "Great": "11",
+        "Good": "40",
+        "Average": "43",
+        "Poor": "5",
+        "Terrible": "0"
+      },
+      {
+        "Entity": "All voters",
+        "Great": "6",
+        "Good": "22",
+        "Average": "29",
+        "Poor": "15",
+        "Terrible": "28"
+      },
+      {
+        "Entity": "Donald Trump",
+        "Great": "0",
+        "Good": "0",
+        "Average": "0",
+        "Poor": "0",
+        "Terrible": "0"
+      },
+      {
+        "Entity": "Joe Biden",
+        "Great": "0",
+        "Good": "0",
+        "Average": "0",
+        "Poor": "0",
+        "Terrible": "0"
+      }
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {
+      "field": "Great",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal"
+    }
+  }
+}

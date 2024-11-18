@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Postgraduate College grad Some college HS for less",
+        "Not at all": "12",
+        "Not too much": "10",
+        "A fair amount": "32",
+        "a great deal": "27"
+      },
+      {
+        "Entity": "Total",
+        "Not at all": "10",
+        "Not too much": "26",
+        "A fair amount": "51",
+        "a great deal": "11"
+      }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Not at all",
+      "type": "quantitative"
+    }
+  }
+}

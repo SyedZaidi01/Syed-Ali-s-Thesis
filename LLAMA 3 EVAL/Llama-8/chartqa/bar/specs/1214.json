@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "50+",
+        "Unfavorable": "49",
+        "Favorable": "46"
+      },
+      {
+        "Entity": "30-49",
+        "Unfavorable": "41",
+        "Favorable": "55"
+      },
+      {
+        "Entity": "18-29",
+        "Unfavorable": "32",
+        "Favorable": "66"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Unfavorable",
+      "type": "quantitative"
+    }
+  }
+}

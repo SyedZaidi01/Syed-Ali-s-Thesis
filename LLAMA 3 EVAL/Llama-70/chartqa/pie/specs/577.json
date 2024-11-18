@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Pie chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Dem I lean Dem",
+        "Too slowly, delaying to vaccine access a": "13",
+        "safety Too fast, before and effectiveness fully understood": "86"
+      },
+      {
+        "Entity": "Rep/lean Rep",
+        "Too slowly, delaying to vaccine access a": "28",
+        "safety Too fast, before and effectiveness fully understood": "69"
+      },
+      {
+        "Entity": "U.S adults",
+        "Too slowly, delaying to vaccine access a": "20",
+        "safety Too fast, before and effectiveness fully understood": "78"
+      }
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {
+      "field": "Too slowly, delaying to vaccine access a",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal"
+    }
+  }
+}

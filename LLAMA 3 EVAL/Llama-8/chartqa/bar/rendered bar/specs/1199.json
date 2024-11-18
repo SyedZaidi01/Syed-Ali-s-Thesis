@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Foreign born",
+        "Not be allowed to stay in the country legally": 94
+      },
+      {
+        "Entity": "U.S born",
+        "Not be allowed to stay in the country legally": 17
+      },
+      {
+        "Entity": "Among Hispanics",
+        "Not be allowed to stay in the country legally": 0
+      },
+      {
+        "Entity": "Hispanic",
+        "Not be allowed to stay in the country legally": 12
+      },
+      {
+        "Entity": "Asian *",
+        "Not be allowed to stay in the country legally": 22
+      },
+      {
+        "Entity": "Black",
+        "Not be allowed to stay in the country legally": 18
+      },
+      {
+        "Entity": "White",
+        "Not be allowed to stay in the country legally": 29
+      },
+      {
+        "Entity": "Re p/Lean Rep",
+        "Not be allowed to stay in the country legally": 42
+      },
+      {
+        "Entity": "Dem /Lean Dem",
+        "Not be allowed to stay in the country legally": 10
+      },
+      {
+        "Entity": "Total",
+        "Not be allowed to stay in the country legally": 24
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Not be allowed to stay in the country legally",
+      "type": "quantitative"
+    }
+  }
+}

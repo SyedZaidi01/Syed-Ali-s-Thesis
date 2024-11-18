@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Posts mentioning \"Black lives matter",
+        "White": "57",
+        "Black": "25",
+        "Hispanic": "13",
+        "Asian": "6"
+      },
+      {
+        "Entity": "on social media",
+        "White": "73",
+        "Black": "12",
+        "Hispanic": "11",
+        "Asian": "5"
+      },
+      {
+        "Entity": "All lawmaker posts on social media",
+        "White": "73",
+        "Black": "12",
+        "Hispanic": "11",
+        "Asian": "5"
+      },
+      {
+        "Entity": "Congressional seats",
+        "White": "79",
+        "Black": "10",
+        "Hispanic": "8",
+        "Asian": "3"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "White",
+      "type": "quantitative"
+    }
+  }
+}

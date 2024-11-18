@@ -1,0 +1,138 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Sub- Saharan Africa",
+        "Less than high school": "12.0",
+        "High school graduate": "20.0",
+        "Some college": "27",
+        "Bachelor's or more": "40"
+      },
+      {
+        "Entity": "North Africa",
+        "Less than high school": "12.0",
+        "High school graduate": "19.0",
+        "Some college": "19",
+        "Bachelor's or more": "50"
+      },
+      {
+        "Entity": "Middle East",
+        "Less than high school": "12.0",
+        "High school graduate": "19.0",
+        "Some college": "19",
+        "Bachelor's or more": "50"
+      },
+      {
+        "Entity": "South America",
+        "Less than high school": "14.0",
+        "High school graduate": "27.0",
+        "Some college": "25",
+        "Bachelor's or more": "34"
+      },
+      {
+        "Entity": "Central America",
+        "Less than high school": "47.0",
+        "High school graduate": "26.0",
+        "Some college": "17",
+        "Bachelor's or more": "11"
+      },
+      {
+        "Entity": "Caribbean",
+        "Less than high school": "23.0",
+        "High school graduate": "30.0",
+        "Some college": "25",
+        "Bachelor's or more": "22"
+      },
+      {
+        "Entity": "Other North America",
+        "Less than high school": "nan",
+        "High school graduate": "17.0",
+        "Some college": "26",
+        "Bachelor's or more": "50"
+      },
+      {
+        "Entity": "Europe",
+        "Less than high school": "11.0",
+        "High school graduate": "22.0",
+        "Some college": "23",
+        "Bachelor's or more": "44"
+      },
+      {
+        "Entity": "Oceania",
+        "Less than high school": "13.0",
+        "High school graduate": "25.0",
+        "Some college": "26",
+        "Bachelor's or more": "37"
+      },
+      {
+        "Entity": "South Asia",
+        "Less than high school": "10.0",
+        "High school graduate": "nan",
+        "Some college": "10",
+        "Bachelor's or more": "71"
+      },
+      {
+        "Entity": "Central Asia",
+        "Less than high school": "5.0",
+        "High school graduate": "16.0",
+        "Some college": "22",
+        "Bachelor's or more": "57"
+      },
+      {
+        "Entity": "Southeast Asia",
+        "Less than high school": "16.0",
+        "High school graduate": "18.0",
+        "Some college": "20",
+        "Bachelor's or more": "46"
+      },
+      {
+        "Entity": "East and",
+        "Less than high school": "16.0",
+        "High school graduate": "18.0",
+        "Some college": "20",
+        "Bachelor's or more": "46"
+      },
+      {
+        "Entity": "Mexico",
+        "Less than high school": "54.0",
+        "High school graduate": "26.0",
+        "Some college": "13",
+        "Bachelor's or more": "0"
+      },
+      {
+        "Entity": "Foreign born birthplace:",
+        "Less than high school": "0.0",
+        "High school graduate": "0.0",
+        "Some college": "0",
+        "Bachelor's or more": "0"
+      },
+      {
+        "Entity": "Foreign born",
+        "Less than high school": "27.0",
+        "High school graduate": "22.0",
+        "Some college": "19",
+        "Bachelor's or more": "32"
+      },
+      {
+        "Entity": "U.S. born",
+        "Less than high school": "8.0",
+        "High school graduate": "28.0",
+        "Some college": "31",
+        "Bachelor's or more": "33"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Less than high school",
+      "type": "quantitative"
+    }
+  }
+}

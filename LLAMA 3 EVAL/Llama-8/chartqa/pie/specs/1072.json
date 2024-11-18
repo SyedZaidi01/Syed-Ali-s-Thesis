@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Pie chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "State and local level",
+        "Value": "23"
+      },
+      {
+        "Entity": "Both equally",
+        "Value": "61"
+      },
+      {
+        "Entity": "National level",
+        "Value": "15"
+      },
+      {
+        "Entity": "No  answer State and local level",
+        "Value": "223"
+      }
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {
+      "field": "Value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal"
+    }
+  }
+}

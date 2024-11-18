@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Cares about the needs ordinary people of",
+        "No": "58",
+        "Yes": "38"
+      },
+      {
+        "Entity": "Promotes action on change climate",
+        "No": "47",
+        "Yes": "46"
+      },
+      {
+        "Entity": "Deals effectively with problems international",
+        "No": "44",
+        "Yes": "50"
+      },
+      {
+        "Entity": "Promotes economic development",
+        "No": "36",
+        "Yes": "58"
+      },
+      {
+        "Entity": "Promotes action on infectious diseases like coronavirus",
+        "No": "34",
+        "Yes": "59"
+      },
+      {
+        "Entity": "Advances the interests like of countries fours",
+        "No": "33",
+        "Yes": "60"
+      },
+      {
+        "Entity": "Promotes human rights",
+        "No": "31",
+        "Yes": "66"
+      },
+      {
+        "Entity": "Promotes peace",
+        "No": "27",
+        "Yes": "68"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "No",
+      "type": "quantitative"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "Higher education",
+        "Values": 23.0
+      },
+      {
+        "Entity": "Justice Department",
+        "Values": 24.0
+      },
+      {
+        "Entity": "Prosecutor",
+        "Values": 33.0
+      },
+      {
+        "Entity": "Military",
+        "Values": 38.0
+      },
+      {
+        "Entity": "Elected office",
+        "Values": 58.0
+      },
+      {
+        "Entity": "Judge",
+        "Values": 69.0
+      },
+      {
+        "Entity": "Private practice",
+        "Values": 105.0
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Values",
+      "type": "quantitative"
+    }
+  }
+}

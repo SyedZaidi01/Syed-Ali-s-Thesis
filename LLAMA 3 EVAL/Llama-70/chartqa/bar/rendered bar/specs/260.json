@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart auto-generated from CSV",
+  "data": {
+    "values": [
+      {
+        "Entity": "child care",
+        "a major reason": 11
+      },
+      {
+        "Entity": "Unable to arrange child care",
+        "a major reason": 11
+      },
+      {
+        "Entity": "isolated from others",
+        "a major reason": 15
+      },
+      {
+        "Entity": "Concern about being isolated from others",
+        "a major reason": 15
+      },
+      {
+        "Entity": "obligations",
+        "a major reason": 23
+      },
+      {
+        "Entity": "Too many other obligations",
+        "a major reason": 23
+      },
+      {
+        "Entity": "Unable to miss work",
+        "a major reason": 35
+      },
+      {
+        "Entity": "necessary",
+        "a major reason": 44
+      },
+      {
+        "Entity": "Just don't think it's",
+        "a major reason": 44
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Entity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "a major reason",
+      "type": "quantitative"
+    }
+  }
+}
