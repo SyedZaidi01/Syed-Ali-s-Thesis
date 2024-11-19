@@ -1,0 +1,65 @@
+Prompt: Extracting Vega-Lite Specifications from SVG Bar Chart Code
+
+Task Description: Given a snippet of SVG bar chart code, extract the underlying data and visual encodings to generate a Vega-Lite specification that reproduces the chart.
+
+Example 1
+
+Input SVG Bar Chart Code (text form):
+
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="50" y="80" width="50" height="120" fill="steelblue"></rect>
+  <rect x="150" y="40" width="50" height="160" fill="steelblue"></rect>
+  <rect x="250" y="100" width="50" height="100" fill="steelblue"></rect>
+  <!-- Additional SVG elements omitted for brevity -->
+</svg>
+Vega-Lite Specification Code:
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart reconstructed from SVG code.",
+  "data": {
+    "values": [
+      {"Category": "A", "Value": 120},
+      {"Category": "B", "Value": 160},
+      {"Category": "C", "Value": 100}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Category", "type": "nominal"},
+    "y": {"field": "Value", "type": "quantitative"}
+  }
+}
+Example 2
+
+Input SVG Bar Chart Code (text form):
+
+<svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="60" y="150" width="40" height="150" fill="#ff6384"></rect>
+  <rect x="140" y="90" width="40" height="210" fill="#36a2eb"></rect>
+  <rect x="220" y="120" width="40" height="180" fill="#cc65fe"></rect>
+  <rect x="300" y="60" width="40" height="240" fill="#ffce56"></rect>
+  <!-- Additional SVG elements omitted for brevity -->
+</svg>
+Vega-Lite Specification Code:
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart reconstructed from SVG code.",
+  "data": {
+    "values": [
+      {"Category": "Q1", "Value": 150},
+      {"Category": "Q2", "Value": 210},
+      {"Category": "Q3", "Value": 180},
+      {"Category": "Q4", "Value": 240}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Category", "type": "nominal"},
+    "y": {"field": "Value", "type": "quantitative"},
+    "color": {"field": "Category", "type": "nominal"}
+  }
+}
+
+Now process the following SVG image and extract data and visual encodings accordingly.

@@ -1,0 +1,69 @@
+Prompt: Extracting Vega-Lite Specifications from SVG Pie Chart Code
+
+Task Description: Given a snippet of SVG pie chart code, extract the underlying
+data and visual encodings to generate a Vega-Lite specification that reproduces the chart.
+
+Example 1
+
+Input SVG Pie Chart Code (text form):
+
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <path d="M200,200 L200,50 A150,150 0 0,1 350,200 z" fill="#4daf4a"></path>
+  <path d="M200,200 L350,200 A150,150 0 0,1 200,350 z" fill="#377eb8"></path>
+  <path d="M200,200 L200,350 A150,150 0 0,1 50,200 z" fill="#ff7f00"></path>
+  <path d="M200,200 L50,200 A150,150 0 0,1 200,50 z" fill="#984ea3"></path>
+  <!-- Additional SVG elements omitted for brevity -->
+</svg>
+Vega-Lite Specification Code:
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Pie chart reconstructed from SVG code.",
+  "data": {
+    "values": [
+      {"Category": "Category A", "Value": 25},
+      {"Category": "Category B", "Value": 25},
+      {"Category": "Category C", "Value": 25},
+      {"Category": "Category D", "Value": 25}
+    ]
+  },
+  "mark": {"type": "arc"},
+  "encoding": {
+    "theta": {"field": "Value", "type": "quantitative"},
+    "color": {"field": "Category", "type": "nominal"}
+  }
+}
+Example 2
+
+Input SVG Pie Chart Code (text form):
+
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <path d="M250,250 L250,100 A150,150 0 0,1 400,250 z" fill="#e41a1c"></path>
+  <path d="M250,250 L400,250 A150,150 0 0,1 250,400 z" fill="#377eb8"></path>
+  <path d="M250,250 L250,400 A150,150 0 0,1 100,250 z" fill="#4daf4a"></path>
+  <path d="M250,250 L100,250 A150,150 0 0,1 250,100 z" fill="#984ea3"></path>
+  <path d="M250,250 L350,250 A100,100 0 0,1 250,150 z" fill="#ff7f00"></path>
+  <!-- Additional SVG elements omitted for brevity -->
+</svg>
+Vega-Lite Specification Code:
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Pie chart reconstructed from SVG code.",
+  "data": {
+    "values": [
+      {"Category": "Segment 1", "Value": 30},
+      {"Category": "Segment 2", "Value": 20},
+      {"Category": "Segment 3", "Value": 25},
+      {"Category": "Segment 4", "Value": 15},
+      {"Category": "Segment 5", "Value": 10}
+    ]
+  },
+  "mark": {"type": "arc"},
+  "encoding": {
+    "theta": {"field": "Value", "type": "quantitative"},
+    "color": {"field": "Category", "type": "nominal"}
+  }
+}
+Your Task: Given a new SVG pie chart code snippet, extract the data and visual encodings
+to produce a Vega-Lite specification that accurately reproduces the chart.

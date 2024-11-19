@@ -1,4 +1,5 @@
-Instruction: Restyle the given Vega-Lite chart specification to change its visual encodings as described in the query.
+Instruction: Restyle the given Vega-Lite chart specification to change its
+visual encodings as described in the query.
 Example 1
 Query: Change the grouping field from 'Region' to 'Category'. Original Vega-Lite Spec:
 
@@ -68,7 +69,8 @@ Restyled Vega-Lite Spec:
 
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A grouped bar chart showing sales by product and region with 'viridis' color scheme.",
+  "description": "A grouped bar chart showing sales by product and
+  region with 'viridis' color scheme.",
   "data": {
     "values": [
       {"Product": "A", "Region": "North", "Sales": 100},
@@ -115,7 +117,8 @@ Restyled Vega-Lite Spec:
 
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A grouped bar chart showing sales by product and region with data labels.",
+  "description": "A grouped bar chart showing sales by product
+  and region with data labels.",
   "data": {
     "values": [
       {"Product": "A", "Region": "North", "Sales": 100},
@@ -149,7 +152,9 @@ Restyled Vega-Lite Spec:
     }
   ]
 }
-Instruction: Restyle the given Vega-Lite chart specification to change its visual encodings as described in the query.
-Process the query to make changes to the following spec code. Only return the Spec code in JSON format and nothing else.
+Instruction: Restyle the given Vega-Lite chart specification to
+change its visual encodings as described in the query.
+Process the query to make changes to the following spec code.
+Only return the Spec code in JSON format and nothing else.
 [INSERT QUERY]
 [INSERT SPEC CODE]

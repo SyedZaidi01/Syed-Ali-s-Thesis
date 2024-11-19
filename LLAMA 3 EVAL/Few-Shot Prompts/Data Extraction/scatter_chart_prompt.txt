@@ -1,0 +1,90 @@
+Prompt: Extracting Vega-Lite Specifications from SVG Scatter Plot Code
+
+Task Description: Given a snippet of SVG scatter plot code, extract the
+underlying data and visual encodings to generate a Vega-Lite specification
+that reproduces the chart.
+
+Example 1
+
+Input SVG Scatter Plot Code (text form):
+
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="450" r="5" fill="red"></circle>
+  <circle cx="100" cy="400" r="5" fill="red"></circle>
+  <circle cx="150" cy="350" r="5" fill="red"></circle>
+  <circle cx="200" cy="300" r="5" fill="red"></circle>
+  <circle cx="250" cy="250" r="5" fill="red"></circle>
+  <circle cx="300" cy="200" r="5" fill="red"></circle>
+  <circle cx="350" cy="150" r="5" fill="red"></circle>
+  <circle cx="400" cy="100" r="5" fill="red"></circle>
+  <circle cx="450" cy="50" r="5" fill="red"></circle>
+  <!-- Additional SVG elements omitted for brevity -->
+</svg>
+Vega-Lite Specification Code:
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot reconstructed from SVG code.",
+  "data": {
+    "values": [
+      {"X": 50, "Y": 450},
+      {"X": 100, "Y": 400},
+      {"X": 150, "Y": 350},
+      {"X": 200, "Y": 300},
+      {"X": 250, "Y": 250},
+      {"X": 300, "Y": 200},
+      {"X": 350, "Y": 150},
+      {"X": 400, "Y": 100},
+      {"X": 450, "Y": 50}
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {"field": "X", "type": "quantitative"},
+    "y": {"field": "Y", "type": "quantitative"}
+  }
+}
+Example 2
+
+Input SVG Scatter Plot Code (text form):
+
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="500" r="5" fill="blue"></circle>
+  <circle cx="150" cy="450" r="5" fill="green"></circle>
+  <circle cx="200" cy="400" r="5" fill="red"></circle>
+  <circle cx="250" cy="350" r="5" fill="blue"></circle>
+  <circle cx="300" cy="300" r="5" fill="green"></circle>
+  <circle cx="350" cy="250" r="5" fill="red"></circle>
+  <circle cx="400" cy="200" r="5" fill="blue"></circle>
+  <circle cx="450" cy="150" r="5" fill="green"></circle>
+  <circle cx="500" cy="100" r="5" fill="red"></circle>
+  <!-- Additional SVG elements omitted for brevity -->
+</svg>
+Vega-Lite Specification Code:
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatter plot reconstructed from SVG code with categories.",
+  "data": {
+    "values": [
+      {"X": 100, "Y": 500, "Category": "Blue"},
+      {"X": 150, "Y": 450, "Category": "Green"},
+      {"X": 200, "Y": 400, "Category": "Red"},
+      {"X": 250, "Y": 350, "Category": "Blue"},
+      {"X": 300, "Y": 300, "Category": "Green"},
+      {"X": 350, "Y": 250, "Category": "Red"},
+      {"X": 400, "Y": 200, "Category": "Blue"},
+      {"X": 450, "Y": 150, "Category": "Green"},
+      {"X": 500, "Y": 100, "Category": "Red"}
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {"field": "X", "type": "quantitative"},
+    "y": {"field": "Y", "type": "quantitative"},
+    "color": {"field": "Category", "type": "nominal"}
+  }
+}
+Your Task: Given a new SVG scatter plot code snippet, extract the data and
+visual encodings to produce a Vega-Lite specification that accurately reproduces
+the chart.
