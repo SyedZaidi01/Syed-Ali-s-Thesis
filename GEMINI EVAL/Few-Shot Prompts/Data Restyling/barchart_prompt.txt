@@ -1,0 +1,186 @@
+Instruction: Restyle the given Vega-Lite chart specification to change
+its visual encodings as described in the query.
+Example 1
+Query: Change the color encoding to use a sequential color scheme based
+on sales values. Original Vega-Lite Spec:
+
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bar chart showing sales by product and region.",
+  "data": {
+    "values": [
+      {"Product": "A", "Region": "North", "Sales": 30},
+      {"Product": "A", "Region": "South", "Sales": 20},
+      {"Product": "B", "Region": "North", "Sales": 25},
+      {"Product": "B", "Region": "South", "Sales": 15}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Product", "type": "nominal"},
+    "y": {"field": "Sales", "type": "quantitative"},
+    "color": {"field": "Region", "type": "nominal"}
+  }
+}
+Restyled Vega-Lite Spec:
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bar chart showing sales by product and region.",
+  "data": {
+    "values": [
+      {"Product": "A", "Region": "North", "Sales": 30},
+      {"Product": "A", "Region": "South", "Sales": 20},
+      {"Product": "B", "Region": "North", "Sales": 25},
+      {"Product": "B", "Region": "South", "Sales": 15}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Product", "type": "nominal"},
+    "y": {"field": "Sales", "type": "quantitative"},
+    "color": {
+      "field": "Sales",
+      "type": "quantitative",
+      "scale": {"scheme": "blues"}
+    }
+  }
+}
+Example 2
+Query: Change the bar colors to red. Original Vega-Lite Spec:
+
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bar chart showing car speeds and stopping distances.",
+  "data": {
+    "values": [
+      {"Speed": 4, "Distance": 2},
+      {"Speed": 7, "Distance": 7},
+      {"Speed": 8, "Distance": 12},
+      {"Speed": 9, "Distance": 15},
+      {"Speed": 10, "Distance": 17},
+      {"Speed": 11, "Distance": 20},
+      {"Speed": 12, "Distance": 21},
+      {"Speed": 13, "Distance": 22},
+      {"Speed": 14, "Distance": 26},
+      {"Speed": 15, "Distance": 28},
+      {"Speed": 16, "Distance": 34},
+      {"Speed": 17, "Distance": 35},
+      {"Speed": 18, "Distance": 36},
+      {"Speed": 19, "Distance": 38},
+      {"Speed": 20, "Distance": 42},
+      {"Speed": 21, "Distance": 43},
+      {"Speed": 22, "Distance": 46},
+      {"Speed": 23, "Distance": 50},
+      {"Speed": 24, "Distance": 54},
+      {"Speed": 25, "Distance": 60}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Speed", "type": "ordinal", "title": "Speed (mph)"},
+    "y": {"field": "Distance", "type": "quantitative", "title": "Stopping Distance (ft)"},
+    "tooltip": [
+      {"field": "Speed", "type": "ordinal", "title": "Speed (mph)"},
+      {"field": "Distance", "type": "quantitative", "title": "Stopping Distance (ft)"}
+    ]
+  }
+}
+Restyled Vega-Lite Spec:
+
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bar chart showing car speeds and stopping distances.",
+  "data": {
+    "values": [
+      {"Speed": 4, "Distance": 2},
+      {"Speed": 7, "Distance": 7},
+      {"Speed": 8, "Distance": 12},
+      {"Speed": 9, "Distance": 15},
+      {"Speed": 10, "Distance": 17},
+      {"Speed": 11, "Distance": 20},
+      {"Speed": 12, "Distance": 21},
+      {"Speed": 13, "Distance": 22},
+      {"Speed": 14, "Distance": 26},
+      {"Speed": 15, "Distance": 28},
+      {"Speed": 16, "Distance": 34},
+      {"Speed": 17, "Distance": 35},
+      {"Speed": 18, "Distance": 36},
+      {"Speed": 19, "Distance": 38},
+      {"Speed": 20, "Distance": 42},
+      {"Speed": 21, "Distance": 43},
+      {"Speed": 22, "Distance": 46},
+      {"Speed": 23, "Distance": 50},
+      {"Speed": 24, "Distance": 54},
+      {"Speed": 25, "Distance": 60}
+    ]
+  },
+  "mark": {
+    "type": "bar",
+    "color": "red"
+  },
+  "encoding": {
+    "x": {"field": "Speed", "type": "ordinal", "title": "Speed (mph)"},
+    "y": {"field": "Distance", "type": "quantitative", "title": "Stopping Distance (ft)"},
+    "tooltip": [
+      {"field": "Speed", "type": "ordinal", "title": "Speed (mph)"},
+      {"field": "Distance", "type": "quantitative", "title": "Stopping Distance (ft)"}
+    ]
+  }
+}
+Example 3
+Query: Modify the chart to use a point mark and size the points based on horsepower.
+Original Vega-Lite Spec:
+
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A scatter plot showing car weight vs. miles per gallon.",
+  "data": {
+    "values": [
+      {"Weight": 1.513, "MPG": 46.6, "Horsepower": 70},
+      {"Weight": 1.835, "MPG": 30.4, "Horsepower": 95},
+      {"Weight": 2.140, "MPG": 22.8, "Horsepower": 110},
+      {"Weight": 2.403, "MPG": 21.4, "Horsepower": 175},
+      {"Weight": 3.170, "MPG": 18.7, "Horsepower": 180}
+    ]
+  },
+  "mark": "circle",
+  "encoding": {
+    "x": {"field": "Weight", "type": "quantitative", "title": "Weight (tons)"},
+    "y": {"field": "MPG", "type": "quantitative", "title": "Miles per Gallon"}
+  }
+}
+Restyled Vega-Lite Spec:
+
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A scatter plot showing car weight vs. miles per gallon with point
+  size based on horsepower.",
+  "data": {
+    "values": [
+      {"Weight": 1.513, "MPG": 46.6, "Horsepower": 70},
+      {"Weight": 1.835, "MPG": 30.4, "Horsepower": 95},
+      {"Weight": 2.140, "MPG": 22.8, "Horsepower": 110},
+      {"Weight": 2.403, "MPG": 21.4, "Horsepower": 175},
+      {"Weight": 3.170, "MPG": 18.7, "Horsepower": 180}
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {"field": "Weight", "type": "quantitative", "title": "Weight (tons)"},
+    "y": {"field": "MPG", "type": "quantitative", "title": "Miles per Gallon"},
+    "size": {"field": "Horsepower", "type": "quantitative"}
+  }
+}
+Instruction: Restyle the given Vega-Lite chart specification to change its visual
+encodings as described in the query.
+
+Process the query to make changes to the following spec code. Only return the Spec
+code in JSON format and nothing else.
+[INSERT QUERY]
+[INSERT SPEC CODE]

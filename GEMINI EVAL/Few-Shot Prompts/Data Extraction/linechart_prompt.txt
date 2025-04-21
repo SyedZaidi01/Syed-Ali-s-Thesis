@@ -1,0 +1,74 @@
+Prompt: Extracting Vega-Lite Specifications from SVG Line Chart Code
+
+Task Description: Given a snippet of SVG line chart code, extract the underlying
+data and visual encodings to generate a Vega-Lite specification that reproduces the chart.
+
+Example 1
+
+Input SVG Line Chart Code (text form):
+
+<svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
+  <polyline
+    fill="none"
+    stroke="blue"
+    stroke-width="2"
+    points="50,250 100,200 150,150 200,100 250,50"
+  />
+  <!-- Additional SVG elements omitted for brevity -->
+</svg>
+Vega-Lite Specification Code:
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart reconstructed from SVG code.",
+  "data": {
+    "values": [
+      {"Time": 1, "Value": 250},
+      {"Time": 2, "Value": 200},
+      {"Time": 3, "Value": 150},
+      {"Time": 4, "Value": 100},
+      {"Time": 5, "Value": 50}
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "Time", "type": "quantitative"},
+    "y": {"field": "Value", "type": "quantitative"}
+  }
+}
+Example 2
+
+Input SVG Line Chart Code (text form):
+
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <polyline
+    fill="none"
+    stroke="red"
+    stroke-width="2"
+    points="60,340 160,280 260,220 360,180 460,160 560,140"
+  />
+  <!-- Additional SVG elements omitted for brevity -->
+</svg>
+Vega-Lite Specification Code:
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart reconstructed from SVG code.",
+  "data": {
+    "values": [
+      {"Month": "January", "Temperature": 340},
+      {"Month": "February", "Temperature": 280},
+      {"Month": "March", "Temperature": 220},
+      {"Month": "April", "Temperature": 180},
+      {"Month": "May", "Temperature": 160},
+      {"Month": "June", "Temperature": 140}
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "Month", "type": "ordinal"},
+    "y": {"field": "Temperature", "type": "quantitative"}
+  }
+}
+Your Task: Given a new SVG line chart code snippet, extract the data and visual
+encodings to produce a Vega-Lite specification that accurately reproduces the chart.

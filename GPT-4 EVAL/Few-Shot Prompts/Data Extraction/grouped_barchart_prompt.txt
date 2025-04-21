@@ -1,0 +1,102 @@
+Prompt: Extracting Vega-Lite Specifications from SVG Grouped Bar Chart Code
+
+Task Description: Given a snippet of SVG grouped bar chart code, extract 
+the underlying data and visual encodings to generate a Vega-Lite specification
+that reproduces the chart.
+
+Example 1
+
+Input SVG Grouped Bar Chart Code (text form):
+
+<svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Group 1 -->
+  <rect x="60" y="120" width="20" height="180" fill="#1f77b4"></rect>
+  <rect x="80" y="150" width="20" height="150" fill="#ff7f0e"></rect>
+  <!-- Group 2 -->
+  <rect x="160" y="100" width="20" height="200" fill="#1f77b4"></rect>
+  <rect x="180" y="130" width="20" height="170" fill="#ff7f0e"></rect>
+  <!-- Group 3 -->
+  <rect x="260" y="80" width="20" height="220" fill="#1f77b4"></rect>
+  <rect x="280" y="110" width="20" height="190" fill="#ff7f0e"></rect>
+  <!-- Additional SVG elements omitted for brevity -->
+</svg>
+Vega-Lite Specification Code:
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Grouped bar chart reconstructed from SVG code.",
+  "data": {
+    "values": [
+      {"Group": "Group 1", "Category": "A", "Value": 180},
+      {"Group": "Group 1", "Category": "B", "Value": 150},
+      {"Group": "Group 2", "Category": "A", "Value": 200},
+      {"Group": "Group 2", "Category": "B", "Value": 170},
+      {"Group": "Group 3", "Category": "A", "Value": 220},
+      {"Group": "Group 3", "Category": "B", "Value": 190}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Group",
+      "type": "nominal",
+      "axis": {"labelAngle": 0},
+      "offset": 0
+    },
+    "xOffset": {"field": "Category", "type": "nominal"},
+    "y": {"field": "Value", "type": "quantitative"},
+    "color": {"field": "Category", "type": "nominal"}
+  }
+}
+Example 2
+
+Input SVG Grouped Bar Chart Code (text form):
+
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Group A -->
+  <rect x="100" y="180" width="25" height="220" fill="#e41a1c"></rect>
+  <rect x="125" y="160" width="25" height="240" fill="#377eb8"></rect>
+  <rect x="150" y="140" width="25" height="260" fill="#4daf4a"></rect>
+  <!-- Group B -->
+  <rect x="250" y="130" width="25" height="270" fill="#e41a1c"></rect>
+  <rect x="275" y="110" width="25" height="290" fill="#377eb8"></rect>
+  <rect x="300" y="90" width="25" height="310" fill="#4daf4a"></rect>
+  <!-- Group C -->
+  <rect x="400" y="200" width="25" height="200" fill="#e41a1c"></rect>
+  <rect x="425" y="180" width="25" height="220" fill="#377eb8"></rect>
+  <rect x="450" y="160" width="25" height="240" fill="#4daf4a"></rect>
+  <!-- Additional SVG elements omitted for brevity -->
+</svg>
+Vega-Lite Specification Code:
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Grouped bar chart reconstructed from SVG code.",
+  "data": {
+    "values": [
+      {"Group": "Group A", "Category": "X", "Value": 220},
+      {"Group": "Group A", "Category": "Y", "Value": 240},
+      {"Group": "Group A", "Category": "Z", "Value": 260},
+      {"Group": "Group B", "Category": "X", "Value": 270},
+      {"Group": "Group B", "Category": "Y", "Value": 290},
+      {"Group": "Group B", "Category": "Z", "Value": 310},
+      {"Group": "Group C", "Category": "X", "Value": 200},
+      {"Group": "Group C", "Category": "Y", "Value": 220},
+      {"Group": "Group C", "Category": "Z", "Value": 240}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Group",
+      "type": "nominal",
+      "axis": {"labelAngle": 0},
+      "offset": 0
+    },
+    "xOffset": {"field": "Category", "type": "nominal"},
+    "y": {"field": "Value", "type": "quantitative"},
+    "color": {"field": "Category", "type": "nominal"}
+  }
+}
+Your Task: Given a new SVG grouped bar chart code snippet, extract the data and
+visual encodings to produce a Vega-Lite specification that accurately reproduces the chart.

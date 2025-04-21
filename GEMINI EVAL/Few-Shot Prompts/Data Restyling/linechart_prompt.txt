@@ -1,0 +1,154 @@
+Instruction: Restyle the given Vega-Lite chart specification to change
+its visual encodings as described in the query.
+Example 1
+Query: Change the line color to blue. Original Vega-Lite Spec:
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple line chart showing the trend of stock prices over time.",
+  "data": {
+    "values": [
+      {"Date": "2020-01-01", "Price": 100},
+      {"Date": "2020-01-02", "Price": 102},
+      {"Date": "2020-01-03", "Price": 101},
+      {"Date": "2020-01-04", "Price": 105},
+      {"Date": "2020-01-05", "Price": 110}
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "Date", "type": "temporal"},
+    "y": {"field": "Price", "type": "quantitative"}
+  }
+}
+Restyled Vega-Lite Spec:
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple line chart showing the trend of stock prices over time.",
+  "data": {
+    "values": [
+      {"Date": "2020-01-01", "Price": 100},
+      {"Date": "2020-01-02", "Price": 102},
+      {"Date": "2020-01-03", "Price": 101},
+      {"Date": "2020-01-04", "Price": 105},
+      {"Date": "2020-01-05", "Price": 110}
+    ]
+  },
+  "mark": {
+    "type": "line",
+    "color": "blue"
+  },
+  "encoding": {
+    "x": {"field": "Date", "type": "temporal"},
+    "y": {"field": "Price", "type": "quantitative"}
+  }
+}
+Example 2
+Query: Change the line style to dashed. Original Vega-Lite Spec:
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A line chart showing the average temperature over months.",
+  "data": {
+    "values": [
+      {"Month": "Jan", "Temperature": 30},
+      {"Month": "Feb", "Temperature": 32},
+      {"Month": "Mar", "Temperature": 45},
+      {"Month": "Apr", "Temperature": 55},
+      {"Month": "May", "Temperature": 65},
+      {"Month": "Jun", "Temperature": 75},
+      {"Month": "Jul", "Temperature": 80},
+      {"Month": "Aug", "Temperature": 78},
+      {"Month": "Sep", "Temperature": 70},
+      {"Month": "Oct", "Temperature": 58},
+      {"Month": "Nov", "Temperature": 45},
+      {"Month": "Dec", "Temperature": 35}
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "Month", "type": "ordinal"},
+    "y": {"field": "Temperature", "type": "quantitative"}
+  }
+}
+Restyled Vega-Lite Spec:
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A line chart showing the average temperature over months.",
+  "data": {
+    "values": [
+      {"Month": "Jan", "Temperature": 30},
+      {"Month": "Feb", "Temperature": 32},
+      {"Month": "Mar", "Temperature": 45},
+      {"Month": "Apr", "Temperature": 55},
+      {"Month": "May", "Temperature": 65},
+      {"Month": "Jun", "Temperature": 75},
+      {"Month": "Jul", "Temperature": 80},
+      {"Month": "Aug", "Temperature": 78},
+      {"Month": "Sep", "Temperature": 70},
+      {"Month": "Oct", "Temperature": 58},
+      {"Month": "Nov", "Temperature": 45},
+      {"Month": "Dec", "Temperature": 35}
+    ]
+  },
+  "mark": {
+    "type": "line",
+    "strokeDash": [5, 5]
+  },
+  "encoding": {
+    "x": {"field": "Month", "type": "ordinal"},
+    "y": {"field": "Temperature", "type": "quantitative"}
+  }
+}
+Example 3
+Query: Add point markers to the line chart at each data point. Original Vega-Lite Spec:
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A line chart showing the company's revenue growth over quarters.",
+  "data": {
+    "values": [
+      {"Quarter": "Q1", "Revenue": 20000},
+      {"Quarter": "Q2", "Revenue": 25000},
+      {"Quarter": "Q3", "Revenue": 30000},
+      {"Quarter": "Q4", "Revenue": 40000}
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "Quarter", "type": "ordinal"},
+    "y": {"field": "Revenue", "type": "quantitative"}
+  }
+}
+Restyled Vega-Lite Spec:
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A line chart showing the company's revenue growth over
+  quarters with point markers.",
+  "data": {
+    "values": [
+      {"Quarter": "Q1", "Revenue": 20000},
+      {"Quarter": "Q2", "Revenue": 25000},
+      {"Quarter": "Q3", "Revenue": 30000},
+      {"Quarter": "Q4", "Revenue": 40000}
+    ]
+  },
+  "mark": {
+    "type": "line",
+    "point": true
+  },
+  "encoding": {
+    "x": {"field": "Quarter", "type": "ordinal"},
+    "y": {"field": "Revenue", "type": "quantitative"}
+  }
+}
+Instruction: Restyle the given Vega-Lite chart specification to change its
+visual encodings as described in the query.
+
+Process the query to make changes to the following spec code. Only return
+the Spec code in JSON format and nothing else.
+[INSERT QUERY]
+[INSERT SPEC CODE]
